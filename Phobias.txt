@@ -1,0 +1,48 @@
+Fear Meter: Implement a fear meter that measures the player's phobia level. 
+The meter will rise when the player encounters fear
+
+
+3. NYKTOFOBIE - tma -- jeskyne atd.
+Pozadí: Mystický les v hluboké noci s jasnými hvězdami na tmavě modrém nebi nebo jeskyne
+
+Background: Nyctophobia, commonly known as the fear of darkness, often stems from childhood experiences or a natural fear of the unknown. It can be triggered by the absence of light, the feeling of isolation, or the fear of what might be lurking in the shadows.
+
+In-Game Context: In the game, nyctophobia can be represented as a pervasive darkness that engulfs the environment, making it difficult to see and navigate. Players may experience heightened anxiety and rely on limited light sources to progress.
+
+Reward: Posileny zrak na urcitou dobu, klasicky ukazatel, ktery bude mit nabijeci dobu
+
+2. AICHMOFOBIE - spicate objekty
+Pozadi: 
+
+In-Game Context: This phobia can be depicted by filling the game world with dangerous traps, sharp objects, or menacing enemies armed with deadly weapons. Players must navigate carefully to avoid harm and confront their fear of sharp objects.
+
+Reward: Katana
+
+5. AKROfOBIE - vyska
+Pozadí: Horizont plný vysokých vodopádů a vysokých skalisk. Nebe je sytě modré s paprsky oranžového slunce, které osvětlují krajinu.
+
+In-Game Context: Design levels with dizzying heights, precarious platforms, and bottomless pits to trigger acrophobia. Players will need to overcome their fear of heights to progress in the game.
+
+Reward: Climbing Gear
+
+1. GLOSSOFOBIE - mluveni na verejnosti -- obchod/vylepsovani itemu/side questy????
+Reward: Healing potion
+
+6. AQUAFOBIE  - voda
+Pozadi: 
+
+In-Game Context: Introduce heavy rainfall and thunderstorms in the game, accompanied by environmental challenges like slippery surfaces and flooding. Players must navigate through the rain while battling their fear.
+
+Reward: Potion that can temporary surpass fear meter, can be restored in fountains
+
+7. KLAUSTROFOBIE - uzavrene mistnosti
+
+Pozadí: Starobylý labyrint podzemních chodeb s kamennými stěnami. Svíčky a pochodně osvětlují prostor v teplých oranžových tónech.
+
+Reward: Fast-travel
+
+4. MAZEOFOBIE - ztraceny
+
+Reward: Minimap
+
+
