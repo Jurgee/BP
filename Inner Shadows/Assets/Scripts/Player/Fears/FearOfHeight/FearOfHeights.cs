@@ -95,19 +95,19 @@ public class FearOfHeights : MonoBehaviour
         fear_meter.fillAmount = Mathf.Lerp(fear_meter.fillAmount, targetFillAmount, smoothSpeed * Time.deltaTime);
 
 
-        //----------------------LIGHT----------------------------------------------------------
-        // Check if fillAmount is greater than 0.5f and adjust light intensity accordingly.
-        if (fear_meter.fillAmount > 0.4f)
-        {
-            // Calculate the light intensity based on fillAmount, starting from 0.5f.
-            float lightIntensity = Mathf.Lerp(1.0f, 0.0f, (fear_meter.fillAmount - 0.5f) * 2.0f);
-            player_light.intensity = lightIntensity;
-        }
-        else
-        {
-            // If fillAmount is less than or equal to 0.5f, keep full light intensity.
-            player_light.intensity = 1.0f;
-        }
+        ////----------------------LIGHT----------------------------------------------------------
+        //// Check if fillAmount is greater than 0.5f and adjust light intensity accordingly.
+        //if (fear_meter.fillAmount > 0.4f)
+        //{
+        //    // Calculate the light intensity based on fillAmount, starting from 0.5f.
+        //    float lightIntensity = Mathf.Lerp(1.0f, 0.0f, (fear_meter.fillAmount - 0.5f) * 2.0f);
+        //    player_light.intensity = lightIntensity;
+        //}
+        //else
+        //{
+        //    // If fillAmount is less than or equal to 0.5f, keep full light intensity.
+        //    //player_light.intensity = 1.0f;
+        //}
         //----------------------LIGHT----------------------------------------------------------
     }
 

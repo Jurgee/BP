@@ -10,6 +10,7 @@ TagManager:
   - Edge_1
   - Edge_2
   - Edge_3
+  - Cave entry
   layers:
   - Default
   - TransparentFX
@@ -62,12 +63,12 @@ TagManager:
   - name: Ground
     uniqueID: 537455667
     locked: 0
-  - name: Foreground
-    uniqueID: 874263729
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Foreground Close
     uniqueID: 1846851361
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Foreground
+    uniqueID: 874263729
     locked: 0
