@@ -6,12 +6,14 @@ public class CaveEntry : MonoBehaviour
 {
     [SerializeField] private Light2D playerLight; // Assign the Light2D component of the player in the Unity Editor
     private float transitionDuration = 0.5f; // Duration of the intensity transition
+    public bool InCave = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             StartCoroutine(FadeLightIntensity(0f, transitionDuration));
+            InCave = true;
         }
     }
 
