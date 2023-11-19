@@ -12,7 +12,6 @@ public class CaveExit : MonoBehaviour
 
     private void Start()
     {
-        // Assuming CaveEntry is attached to the same GameObject as CaveExit
         entry = GameObject.FindObjectOfType<CaveEntry>();
     }
 
@@ -26,16 +25,20 @@ public class CaveExit : MonoBehaviour
 
     private IEnumerator WaitForFlashlightOffAndFade()
     {
-        // Wait until the flashlight is turned off
-        while (flashlight.enabled)
+        // If the player is in the cave but the flashlight is still on, wait until it's off
+        if (entry.InCave && flashlight.enabled)
         {
-            yield return null;
+            while (flashlight.enabled)
+            {
+                yield return null;
+            }
         }
 
-        // Once the flashlight is off, start fading the light intensity
-        StartCoroutine(FadeLightIntensity(0.5f, transitionDuration));
+        // Set InCave to false when leaving the cave
         entry.InCave = false;
 
+        // If the flashlight is off, start fading the light intensity
+        StartCoroutine(FadeLightIntensity(0.5f, transitionDuration));
     }
 
     private IEnumerator FadeLightIntensity(float targetIntensity, float duration)
