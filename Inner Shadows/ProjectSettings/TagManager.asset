@@ -12,6 +12,7 @@ TagManager:
   - Edge_3
   - Cave entry
   - Cave exit
+  - Wall
   layers:
   - Default
   - TransparentFX

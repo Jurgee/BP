@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -11,14 +12,17 @@ public class Flashlight : MonoBehaviour
 
     private float batteryDrainRate = 0.4f;
     private float batteryRechargeRate = 0.2f;
+    
 
     private bool isRecharging = false;
     private bool canToggleFlashlight = true;
+   
 
     private CaveEntry caveEntry; // Assuming you have a CaveEntry script
 
     private void Awake()
     {
+        player_spotlight.enabled = true;
         canToggleFlashlight = true;
         player_flash_spot.enabled = false;
         flashlight.enabled = false;
@@ -30,17 +34,13 @@ public class Flashlight : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canToggleFlashlight)
         {
-            if (canToggleFlashlight)
-            {
-                ToggleFlashlight();
-            }
-
+            ToggleFlashlight();
         }
-        
-        // Update battery level
+
         UpdateBatteryLevel();
+        
     }
 
     void ToggleFlashlight()
@@ -85,7 +85,9 @@ public class Flashlight : MonoBehaviour
     {
         flashlight.enabled = false;
         player_flash_spot.enabled = false;
-        player_spotlight.enabled = true;
+
+        player_spotlight.enabled = !caveEntry.InCave;
+
         isRecharging = true; // Start recharging when turning off the flashlight
         canToggleFlashlight = true; // Allow toggling the flashlight again
     }
@@ -108,23 +110,18 @@ public class Flashlight : MonoBehaviour
             {
                 flashlight.enabled = false;
                 player_flash_spot.enabled = false;
+
                 player_spotlight.enabled = caveEntry.InCave ? false : true;
 
                 isRecharging = true; // Start recharging when the battery is empty
                 canToggleFlashlight = false; // Disable flashlight toggle until the battery is full
             }
+
+            
         }
         else if (isRecharging)
         {
-
-            if(caveEntry.InCave) 
-            {
-                player_spotlight.enabled = false;
-            }
-            else
-            {
-                player_spotlight.enabled = true;
-            }
+            player_spotlight.enabled = caveEntry.InCave ? false : true;
             // Recharge battery
             battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 1);
 
@@ -139,11 +136,11 @@ public class Flashlight : MonoBehaviour
                 canToggleFlashlight = true; // Enable flashlight toggle when the battery is full
             }
         }
+        
     }
-
-
     void SetBatteryVisibility(bool visible)
     {
         battery.gameObject.SetActive(visible);
     }
+
 }

@@ -30,5 +30,7 @@ public class CaveEntry : MonoBehaviour
         }
 
         playerLight.intensity = targetIntensity; // Ensure the target intensity is reached
+        playerLight.enabled = false;
+
     }
 }
