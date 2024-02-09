@@ -14,6 +14,7 @@ public class CaveEntry : MonoBehaviour
         {
             StartCoroutine(FadeLightIntensity(0f, transitionDuration));
             InCave = true;
+
         }
     }
 

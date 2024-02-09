@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Flashlight : MonoBehaviour
 {
     public Light2D flashlight;
-    [SerializeField] private Image battery;
+    [SerializeField] public Image battery;
     [SerializeField] private Light2D player_flash_spot;
     [SerializeField] private Light2D player_spotlight;
 
@@ -18,7 +18,9 @@ public class Flashlight : MonoBehaviour
     private bool canToggleFlashlight = true;
    
 
-    private CaveEntry caveEntry; // Assuming you have a CaveEntry script
+    private CaveEntry caveEntry; 
+    private CaveHand caveHand;
+
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public class Flashlight : MonoBehaviour
 
         // Get the CaveEntry script attached to the same GameObject
         caveEntry = GameObject.FindObjectOfType<CaveEntry>();
+        caveHand = GameObject.FindObjectOfType<CaveHand>();
     }
 
     void Update()
@@ -87,6 +90,7 @@ public class Flashlight : MonoBehaviour
         player_flash_spot.enabled = false;
 
         player_spotlight.enabled = !caveEntry.InCave;
+        caveHand.spriteRenderer.enabled = false; // From CaveHand script, hand will disappear after turn off flashlight
 
         isRecharging = true; // Start recharging when turning off the flashlight
         canToggleFlashlight = true; // Allow toggling the flashlight again

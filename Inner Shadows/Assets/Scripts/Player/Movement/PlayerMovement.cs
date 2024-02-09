@@ -15,7 +15,10 @@ public class PlayerMovement : MonoBehaviour
     public bool edge_3;
     private bool not_jump;
     public bool is_on_platform;
-    
+
+    public bool Aleft = false;
+    public bool Dright = true;
+
     //dostanou pristup
     private void Awake()
     {
@@ -33,10 +36,15 @@ public class PlayerMovement : MonoBehaviour
         if(horizontal_input > 0.01f)
         {
             transform.localScale = Vector3.one;
+            Dright = true;
+            Aleft = false;
         }
         else if(horizontal_input < -0.01f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            Aleft = true;
+            Dright = false;
+
         }
 
 
