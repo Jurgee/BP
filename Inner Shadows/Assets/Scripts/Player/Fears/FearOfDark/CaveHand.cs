@@ -44,7 +44,7 @@ public class CaveHand : MonoBehaviour
             return;
         }
         spriteRenderer.enabled = true;
-
+        
         if (direction.Dright) // Moving right
         {
             if (wasMovingLeft) // If there was a change from left to right movement
