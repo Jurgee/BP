@@ -36,7 +36,7 @@ In-Game Context: Introduce heavy rainfall and thunderstorms in the game, accompa
 Reward: Potion that can temporary surpass fear meter, can be restored in fountains
 
 
-4. MAZEOFOBIE - ztraceny DONE
+4. MAZEOFOBIE(metathesiophobia) - ztraceny DONE
 
 Reward: Minimap
 
