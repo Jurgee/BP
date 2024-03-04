@@ -1,29 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraControler : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    private float currentPosiX;
-    private Vector3 velocity = Vector3.zero;
-
-    [SerializeField] private Transform player;
-    [SerializeField] private float aheadDistanece;
     [SerializeField] private float cameraSpeed;
+    [SerializeField] private Transform player;
+    [SerializeField] private float aheadDistance;
+    [SerializeField] private float verticalOffset;
+    [SerializeField] private float damping;
     private float lookAhead;
+
+
+
+    private Vector3 targetPosition;
 
     private void Update()
     {
-        // transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosiX, transform.position.y, transform.position.z), ref velocity, speed);
+        // Horizontal camera movement
+        targetPosition = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
+        lookAhead = Mathf.Lerp(lookAhead, (aheadDistance * player.localScale.x), Time.deltaTime * cameraSpeed);
 
-        transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z);
-        lookAhead = Mathf.Lerp(lookAhead, (aheadDistanece * player.localScale.x), Time.deltaTime * cameraSpeed);
-    }
+        // Vertical camera movement
+        float targetYPosition = player.position.y + verticalOffset;
+        targetPosition.y = Mathf.Lerp(transform.position.y, targetYPosition, Time.deltaTime * damping);
 
-    public void MoveToNewRoom(Transform _newRoom)
-    {
-        currentPosiX = _newRoom.position.x;
-        
+        transform.position = targetPosition;
     }
 }
