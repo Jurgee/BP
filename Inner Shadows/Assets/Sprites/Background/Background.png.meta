@@ -143,12 +143,12 @@ TextureImporter:
       name: Background_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 507
-        height: 509
+        x: 0
+        y: 2
+        width: 511
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
