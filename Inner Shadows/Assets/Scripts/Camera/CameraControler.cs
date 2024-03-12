@@ -7,10 +7,8 @@ public class CameraControler : MonoBehaviour
     [SerializeField] private float aheadDistance;
     [SerializeField] private float verticalOffset;
     [SerializeField] private float damping;
+    [SerializeField] private float look_down;
     private float lookAhead;
-
-
-
     private Vector3 targetPosition;
 
     private void Update()
@@ -21,8 +19,17 @@ public class CameraControler : MonoBehaviour
 
         // Vertical camera movement
         float targetYPosition = player.position.y + verticalOffset;
+
+        // Check if the "S" key is being held down
+        if (Input.GetKey(KeyCode.S))
+        {
+            // Move the camera down
+            targetYPosition -= look_down; // Adjust this value as needed for desired downward movement speed
+        }
+
         targetPosition.y = Mathf.Lerp(transform.position.y, targetYPosition, Time.deltaTime * damping);
 
         transform.position = targetPosition;
     }
 }
+
