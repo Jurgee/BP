@@ -14,7 +14,7 @@ public class FearOfHeights : MonoBehaviour
     private float groundY;
     private float previousY;
 
-    private float fear_level = 0;
+    public float fearLevel = 0;
     private float decreaseRate = 0.4f;
     private float smoothSpeed = 7.0f;
     private float onEdgeIncreaseRate = 0.0f;
@@ -52,7 +52,7 @@ public class FearOfHeights : MonoBehaviour
 
             if (timeSinceLastIncrease >= timeBetweenIncreases)
             {
-                fear_level += onEdgeIncreaseRate;
+                fearLevel += onEdgeIncreaseRate;
                 timeSinceLastIncrease = 0.0f;
             }
 
@@ -63,10 +63,10 @@ public class FearOfHeights : MonoBehaviour
         else if (player_movement.is_on_platform)
         {
             // Check if the player is moving upward
-            if (currentY < previousY || currentY > previousY)
+            if (currentY != previousY)
             {
                 float deltaHeight = currentY - previousY;
-                fear_level += deltaHeight * 0.4f; // Adjust multiplier as needed
+                fearLevel += deltaHeight * 0.4f; // Adjust multiplier as needed
             }
 
             previousY = currentY;
@@ -77,7 +77,7 @@ public class FearOfHeights : MonoBehaviour
         else if (player_movement.grounded)
         {
             groundY = Mathf.Abs(player.position.y);
-            fear_level = Mathf.Max(0, fear_level - decreaseRate * (Time.deltaTime * smoothSpeed));
+            fearLevel = Mathf.Max(0, fearLevel - decreaseRate * (Time.deltaTime * smoothSpeed));
             FearBarFiller();
             ColorChanger();
         }
@@ -85,8 +85,13 @@ public class FearOfHeights : MonoBehaviour
 
     void FearBarFiller()
     {
-        float targetFillAmount = Mathf.Abs(fear_level / 30);
+        float targetFillAmount = Mathf.Abs(fearLevel / 30);
         fear_meter.fillAmount = Mathf.Lerp(fear_meter.fillAmount, targetFillAmount, smoothSpeed * Time.deltaTime);
+        if (fear_meter.fillAmount >= 1.0f)
+        {
+            GetComponent<Health>().TakeDamage(100);
+            fearLevel = 0;
+        }
     }
 
     void ColorChanger()

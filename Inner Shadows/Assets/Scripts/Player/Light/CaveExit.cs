@@ -1,25 +1,37 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for cave exit, turn on players light
+ */
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering.Universal;
 
 public class CaveExit : MonoBehaviour
 {
-    [SerializeField] private Light2D playerLight;
+    [SerializeField] private Light2D playerLight; 
     private float transitionDuration = 1f;
-    private CaveEntry entry;
+    private CaveEntry[] entries;
+    private Health playerHealth;
 
     private void Start()
     {
-        entry = GameObject.FindObjectOfType<CaveEntry>();
+        entries = GameObject.FindObjectsOfType<CaveEntry>(); // Find all objects
+
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             StartCoroutine(FadeLightIntensity(0.5f, transitionDuration));
-            entry.InCave = false;
+            // Set all objects to false
+            foreach (var entry in entries)
+            {
+                entry.InCave = false;
+            }
         }
     }
 
@@ -31,7 +43,7 @@ public class CaveExit : MonoBehaviour
         while (elapsedTime < duration)
         {
             playerLight.intensity = Mathf.Lerp(startIntensity, targetIntensity, elapsedTime / duration);
-            elapsedTime += Time.fixedDeltaTime; // Use Time.fixedDeltaTime for a smoother transition
+            elapsedTime += Time.fixedDeltaTime; 
             yield return null;
         }
 

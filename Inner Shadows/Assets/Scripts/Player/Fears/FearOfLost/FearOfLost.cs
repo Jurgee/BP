@@ -1,27 +1,32 @@
-using Mono.Cecil;
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for fear of lost phobia
+ */
+
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FearOfLost : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private PlayerMovement player_movement;
-    [SerializeField] private Image fear_meter;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] public Image fearMeter;
 
     private float maxFear = 500.0f;
-    private float fearPerXUnit = 1.0f; // Adjust this value as needed.
-    private float fearPerYUnit = 1.0f; // Adjust this value as needed.
-    private float smoothSpeed = 7.0f;
-    private float fear_level;
-    private Vector2 guidepostPosition;
+    private float fearPerXUnit = 1.0f; 
+    private float fearPerYUnit = 1.0f; 
+    private float smoothSpeed = 15.0f;
+    public float fearLevel;
+    private Vector3 guidepostPosition;
     private bool isCounting;
 
     private void Start()
     {
-        fear_meter.fillAmount = 0;
-        fear_level = 0;
+        fearMeter.fillAmount = 0;
+        fearLevel = 0;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,23 +36,23 @@ public class FearOfLost : MonoBehaviour
             // If we are not already counting (i.e., first guidepost hit), reset the fear and start counting.
             if (!isCounting)
             {
-                fear_level = 0;
-                fear_meter.fillAmount = 0;
+                fearLevel = 0;
+                fearMeter.fillAmount = 0;
                 isCounting = true;
             }
 
             // Remember the position (x, y) of the guidepost when the player hits it.
             guidepostPosition = other.transform.position;
+            GetComponent<Health>().SetRespawnPosition(guidepostPosition); // set respawn point thanks to the guidepost
         }
     }
 
     private void Update()
     {
-        
         // Check if we are allowed to start counting.
         if (isCounting)
         {
-            if(player_movement.is_on_platform || player_movement.edge_1 || player_movement.grounded || player_movement.edge_2 || player_movement.edge_3)
+            if(playerMovement.is_on_platform || playerMovement.edge_1 || playerMovement.grounded || playerMovement.edge_2 || playerMovement.edge_3)
             {
                 float X_difference = Mathf.Abs(player.position.x - guidepostPosition.x);
                 float Y_difference = Mathf.Abs((player.position.y - guidepostPosition.y) * 3);
@@ -58,27 +63,31 @@ public class FearOfLost : MonoBehaviour
                 if (fearIncrease <= 34)
                 {
                     // If the player is close enough, allow the fear to decrease.
-                    fear_level -= 1.0f;
-                    fear_level = Mathf.Clamp(fear_level, 0, maxFear);
+                    fearLevel -= 1.0f;
+                    fearLevel = Mathf.Clamp(fearLevel, 0, maxFear);
                 }
                 else
                 {
                     // If the player is not close enough, ensure the fear only increases or stays the same.
-                    fear_level = Mathf.Max(fear_level, fearIncrease);
+                    fearLevel = Mathf.Max(fearLevel, fearIncrease);
                 }
 
                 // Calculate the target fill amount and smoothly update it.
-                float targetFillAmount = fear_level / maxFear;
-                fear_meter.fillAmount = Mathf.Lerp(fear_meter.fillAmount, targetFillAmount, smoothSpeed * Time.deltaTime);
+                float targetFillAmount = fearLevel / maxFear;
+                fearMeter.fillAmount = Mathf.Lerp(fearMeter.fillAmount, targetFillAmount, smoothSpeed * Time.deltaTime);
                 ColorChanger();
+
+                if (fearMeter.fillAmount >= 1.0f)
+                {
+                    GetComponent<Health>().TakeDamage(100);
+                    fearLevel = 0;
+                }
             }
         }
     }
-
-    void ColorChanger()
+    private void ColorChanger()
     {
-        Color fear_color = Color.Lerp(Color.yellow, Color.red, fear_meter.fillAmount);
-        fear_meter.color = fear_color;
-
+        Color fearColor = Color.Lerp(Color.green, Color.red, fearMeter.fillAmount);
+        fearMeter.color = fearColor;
     }
 }

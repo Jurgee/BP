@@ -19,10 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public bool Aleft = false;
     public bool Dright = true;
 
-    //dostanou pristup
     private void Awake()
     {
-        
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         
@@ -61,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("yVelocity", body.velocity.y);
 
         //is falling
-        if((grounded ||  is_on_platform || (edge_1 || edge_2 || edge_3)) && body.velocity.y < 0) 
+        if ((grounded || is_on_platform || (edge_1 || edge_2 || edge_3)) && body.velocity.y < 0)
         {
             animator.SetTrigger("jump");
         }

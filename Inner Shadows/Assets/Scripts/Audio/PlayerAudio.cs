@@ -53,9 +53,9 @@ public class PlayerAudio : MonoBehaviour
         if (height_fear_meter.fillAmount == 1)
         {
 
-            player_health.GetComponent<Health>().TakeDamage(10);
-            player_light.intensity = 0;
+            player_health.GetComponent<Health>().TakeDamage(100);
             heart_beat_audio.Stop();
+            height_fear_meter.fillAmount = 0f;
 
 
         }

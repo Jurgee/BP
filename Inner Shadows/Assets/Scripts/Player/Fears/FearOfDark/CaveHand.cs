@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for cave hand funcs
+ */
 using UnityEngine;
 
 public class CaveHand : MonoBehaviour
@@ -6,8 +11,8 @@ public class CaveHand : MonoBehaviour
     public float speed = 0.5f; // Speed at which the hand moves towards the player
 
     private PlayerMovement direction;
-    private CaveEntry entry;
-    private Flashlight battery;
+    private CaveEntry[] entries;
+    [SerializeField] Flashlight battery;
     public SpriteRenderer spriteRenderer;
 
     private Vector3 leftOffset; // Store the initial offset from the player to maintain distance
@@ -19,66 +24,69 @@ public class CaveHand : MonoBehaviour
     void Start()
     {
         direction = GameObject.FindObjectOfType<PlayerMovement>();
-        entry = GameObject.FindObjectOfType<CaveEntry>();
-        battery = GameObject.FindObjectOfType<Flashlight>();
-
+        entries = GameObject.FindObjectsOfType<CaveEntry>(); //multiple
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         leftOffset = transform.position - player.position;
         rightOffset = player.position - transform.position;
 
-        // Set the initial position of the cube
+        // Set the initial position of the hand
         transform.position = player.position + leftOffset;
     }
 
     void Update()
     {
-        if (!entry.InCave)
+        bool inCaveWithFlashlight = false;
+
+        foreach (var entry in entries)
         {
-            spriteRenderer.enabled = false;
-            return;
+            if (entry.InCave && battery.flashlight.enabled)
+            {
+                inCaveWithFlashlight = true;
+                break; // In cave and flashlight is on
+            }
         }
 
-        if (!battery.flashlight.enabled)
-        {
-            return;
-        }
-        spriteRenderer.enabled = true;
-        
-        if (direction.Dright) // Moving right
-        {
-            if (wasMovingLeft) // If there was a change from left to right movement
-            {
-                transform.position = player.position + leftOffset; // Reset position to the left offset
-                wasMovingLeft = false; // Reset the flag
-            }
-            else
-            {
-                MoveTowardsPlayer();
-            }
+        spriteRenderer.enabled = inCaveWithFlashlight;
 
-            wasMovingRight = true; // Set the flag for right movement
-        }
-
-        if (direction.Aleft) // Moving left
+        if (inCaveWithFlashlight)
         {
-            if (wasMovingRight) // If there was a change from right to left movement
+
+            if (direction.Dright) // Moving right
             {
-                transform.position = player.position + rightOffset; // Reset position to the right offset
-                wasMovingRight = false; // Reset the flag
-            }
-            else
-            {
-                MoveTowardsPlayer();
+                if (wasMovingLeft) // If there was a change from left to right movement
+                {
+                    transform.position = player.position + leftOffset; // Reset position to the left offset
+                    wasMovingLeft = false; // Reset the flag
+                }
+                else
+                {
+                    MoveTowardsPlayer();
+                }
+
+                wasMovingRight = true; // Set the flag for right movement
             }
 
-            wasMovingLeft = true; // Set the flag for left movement
-        }
+            if (direction.Aleft) // Moving left
+            {
+                if (wasMovingRight) // If there was a change from right to left movement
+                {
+                    transform.position = player.position + rightOffset; // Reset position to the right offset
+                    wasMovingRight = false; // Reset the flag
+                }
+                else
+                {
+                    MoveTowardsPlayer();
+                }
 
-        // Check if the hand is at the player's position and decrease battery fill amount
-        if (transform.position == player.position)
-        {
-            DecreaseBatteryFillAmount();
+                wasMovingLeft = true; // Set the flag for left movement
+            }
+
+            // Check if the hand is at the player's position and decrease battery fill amount
+            if (transform.position == player.position)
+            {
+                DecreaseBatteryFillAmount();
+            }
         }
     }
 
@@ -91,7 +99,7 @@ public class CaveHand : MonoBehaviour
     {
         if (battery != null)
         {
-            battery.battery.fillAmount -= 0.2f; // Take some battery after hand hit
+            battery.battery.fillAmount -= 0.3f; // Take some battery after hand hit
 
             // Reset cube position
             if (direction.Dright)

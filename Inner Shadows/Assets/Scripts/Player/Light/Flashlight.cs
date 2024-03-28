@@ -1,4 +1,8 @@
-using System.Collections;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for flashlight funcs
+ */
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
@@ -7,8 +11,8 @@ public class Flashlight : MonoBehaviour
 {
     public Light2D flashlight;
     [SerializeField] public Image battery;
-    [SerializeField] private Light2D player_flash_spot;
-    [SerializeField] private Light2D player_spotlight;
+    [SerializeField] private Light2D playerFlashSpot;
+    [SerializeField] private Light2D playerSpotlight;
 
     private float batteryDrainRate = 0.4f;
     private float batteryRechargeRate = 0.2f;
@@ -18,21 +22,21 @@ public class Flashlight : MonoBehaviour
     private bool canToggleFlashlight = true;
    
 
-    private CaveEntry caveEntry; 
-    private CaveHand caveHand;
+    private CaveEntry[] caveEntries; 
+  
 
 
     private void Awake()
     {
-        player_spotlight.enabled = true;
+        playerSpotlight.enabled = true;
         canToggleFlashlight = true;
-        player_flash_spot.enabled = false;
+        playerFlashSpot.enabled = false;
         flashlight.enabled = false;
         SetBatteryVisibility(false);
 
         // Get the CaveEntry script attached to the same GameObject
-        caveEntry = GameObject.FindObjectOfType<CaveEntry>();
-        caveHand = GameObject.FindObjectOfType<CaveHand>();
+        caveEntries = GameObject.FindObjectsOfType<CaveEntry>(); // Find all caveEntries
+       
     }
 
     void Update()
@@ -48,7 +52,16 @@ public class Flashlight : MonoBehaviour
 
     void ToggleFlashlight()
     {
-        bool isInCave = caveEntry != null && caveEntry.InCave;
+        bool isInCave = false;
+        foreach (var entry in caveEntries)
+        {
+            if (entry != null && entry.InCave)
+            {
+                isInCave = true;
+                break; // Exit loop early if a valid entry is found
+            }
+        }
+
 
         // If the flashlight is on and the player is out of the cave, turn it off
         if (flashlight.enabled && !isInCave)
@@ -74,73 +87,84 @@ public class Flashlight : MonoBehaviour
     
     void TurnOnFlashlight()
     {
-        flashlight.enabled = true;
-        player_flash_spot.enabled = true;
+        foreach (var entry in caveEntries)
+        {
+            flashlight.enabled = true;
+            playerFlashSpot.enabled = true;
 
-        player_spotlight.enabled = !caveEntry.InCave;
+            playerSpotlight.enabled = !entry.InCave;
 
-        SetBatteryVisibility(true);
-        isRecharging = false; // Stop recharging when turning on the flashlight
+            SetBatteryVisibility(true);
+            isRecharging = false; // Stop recharging when turning on the flashlight
+        }
     }
 
 
     void TurnOffFlashlight()
     {
-        flashlight.enabled = false;
-        player_flash_spot.enabled = false;
+        foreach (var entry in caveEntries)
+        {
+            flashlight.enabled = false;
+            playerFlashSpot.enabled = false;
 
-        player_spotlight.enabled = !caveEntry.InCave;
-        caveHand.spriteRenderer.enabled = false; // From CaveHand script, hand will disappear after turn off flashlight
+            playerSpotlight.enabled = !entry.InCave;
 
-        isRecharging = true; // Start recharging when turning off the flashlight
-        canToggleFlashlight = true; // Allow toggling the flashlight again
+            isRecharging = true; // Start recharging when turning off the flashlight
+            canToggleFlashlight = true; // Allow toggling the flashlight again
+        }
     }
 
 
     void UpdateBatteryLevel()
     {
-        // Adjust battery level based on flashlight state
-        if (flashlight.enabled)
+        foreach (var entry in caveEntries)
         {
-            // Drain battery
-            battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 10);
-
-            // Decrease flashlight intensity as the battery level goes below 0.5
-            flashlight.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
-            player_flash_spot.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
-
-            // If the battery is empty, turn off the flashlight and start recharging
-            if (battery.fillAmount <= 0f)
+            // Adjust battery level based on flashlight state
+            if (flashlight.enabled)
             {
-                flashlight.enabled = false;
-                player_flash_spot.enabled = false;
+                // Drain battery
+                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 10);
 
-                player_spotlight.enabled = caveEntry.InCave ? false : true;
+                // Decrease flashlight intensity as the battery level goes below 0.5
+                flashlight.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
+                playerFlashSpot.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
+                playerSpotlight.enabled = entry.InCave ? false : true;
 
-                isRecharging = true; // Start recharging when the battery is empty
-                canToggleFlashlight = false; // Disable flashlight toggle until the battery is full
+                // If the battery is empty, turn off the flashlight and start recharging
+                if (battery.fillAmount <= 0f)
+                {
+                    flashlight.enabled = false;
+                    playerFlashSpot.enabled = false;
+
+                    playerSpotlight.enabled = entry.InCave ? false : true;
+
+                    isRecharging = true; // Start recharging when the battery is empty
+                    canToggleFlashlight = false; // Disable flashlight toggle until the battery is full
+                }
+
             }
-
-            
-        }
-        else if (isRecharging)
-        {
-            player_spotlight.enabled = caveEntry.InCave ? false : true;
-            // Recharge battery
-            battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 1);
-
-            // Ensure battery level stays within the range [0, 1]
-            battery.fillAmount = Mathf.Clamp01(battery.fillAmount);
-
-            // Hide the battery meter when the battery is full
-            if (battery.fillAmount >= 1f)
+            else if (isRecharging)
             {
-                SetBatteryVisibility(false);
-                isRecharging = false;
-                canToggleFlashlight = true; // Enable flashlight toggle when the battery is full
+                playerSpotlight.enabled = entry.InCave ? false : true;
+                // Recharge battery
+                battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 1);
+
+                // Ensure battery level stays within the range [0, 1]
+                battery.fillAmount = Mathf.Clamp01(battery.fillAmount);
+
+                // Hide the battery meter when the battery is full
+                if (battery.fillAmount >= 1f)
+                {
+                    SetBatteryVisibility(false);
+                    isRecharging = false;
+                    canToggleFlashlight = true; // Enable flashlight toggle when the battery is full
+                }
+            }
+            else
+            {
+                playerSpotlight.enabled = entry.InCave ? false : true;
             }
         }
-        
     }
     void SetBatteryVisibility(bool visible)
     {

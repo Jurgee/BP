@@ -1,0 +1,3128 @@
+fileFormatVersion: 2
+guid: 81f7f0b03bb47b043843b4c36403f9ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Strana 2_0
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 6517
+        width: 411
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90af1f4cf0d07bc40be872c1d31c8b40
+      internalID: 1097296679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_1
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 6517
+        width: 412
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033238ad13a5b12419cd0fefbe147675
+      internalID: 1757376583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_2
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 6517
+        width: 418
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954d39e0f34a2714aa6701e401fae9c4
+      internalID: -184131992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_3
+      rect:
+        serializedVersion: 2
+        x: 4941
+        y: 6517
+        width: 420
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a250f09c461d96d4886c9074b31b47c2
+      internalID: 1836063605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_4
+      rect:
+        serializedVersion: 2
+        x: 6283
+        y: 6517
+        width: 459
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630f6eaffb607904695c23e14d664ec9
+      internalID: -1478565365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_5
+      rect:
+        serializedVersion: 2
+        x: 7637
+        y: 6517
+        width: 476
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d314388b22af54b9fb178ca432f585
+      internalID: -1616702049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_6
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 6517
+        width: 455
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c80d590eb6f9d747bcd3b3e98958f70
+      internalID: 2109214723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_7
+      rect:
+        serializedVersion: 2
+        x: 10389
+        y: 6517
+        width: 439
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31891ed61accb58489b7fbec9b765923
+      internalID: 625163319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_8
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 5612
+        width: 547
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cddfe2496a102849ae41993dcbfa87a
+      internalID: -37082146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_9
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 5612
+        width: 563
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4047ee3f4ea7c90419b9e114503eee74
+      internalID: 530453896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_10
+      rect:
+        serializedVersion: 2
+        x: 3481
+        y: 5612
+        width: 566
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2725e4443b262794d887b1b98b8fe8a0
+      internalID: 1504630192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_11
+      rect:
+        serializedVersion: 2
+        x: 4852
+        y: 5612
+        width: 547
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf76a9e9b94b174f84d624a8f7cafa0
+      internalID: 394894600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_12
+      rect:
+        serializedVersion: 2
+        x: 6234
+        y: 5612
+        width: 487
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde9062cb53c4e64db061292784cbd4f
+      internalID: 997071538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_13
+      rect:
+        serializedVersion: 2
+        x: 7605
+        y: 5612
+        width: 470
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dee1b68ad630e48ae9af706348a0aa
+      internalID: -574984764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_14
+      rect:
+        serializedVersion: 2
+        x: 8987
+        y: 5612
+        width: 459
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8dec2c17698f54595acd4a11bb839f
+      internalID: 2063561972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_15
+      rect:
+        serializedVersion: 2
+        x: 10313
+        y: 5612
+        width: 504
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9557d1aa0c8feb49a31db5dd9fbc08a
+      internalID: 377417569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_16
+      rect:
+        serializedVersion: 2
+        x: 7637
+        y: 5487
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fb5d2bc5fa60c499fa22961580a2ad
+      internalID: 1955801975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_17
+      rect:
+        serializedVersion: 2
+        x: 9056
+        y: 5498
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f663759e2b87c643bc90b112897a04d
+      internalID: 296082611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_18
+      rect:
+        serializedVersion: 2
+        x: 10449
+        y: 5514
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f187269f5c5c4c4a93077b56bda9330
+      internalID: -733896130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_19
+      rect:
+        serializedVersion: 2
+        x: 5535
+        y: 4707
+        width: 1315
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e74be0e9b5247f4e9e8316c1eb151d4
+      internalID: 576965414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_20
+      rect:
+        serializedVersion: 2
+        x: 6846
+        y: 4707
+        width: 1278
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d56881a2ec97b408e5359cfa0b93ef
+      internalID: 1387156727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_21
+      rect:
+        serializedVersion: 2
+        x: 8141
+        y: 5368
+        width: 90
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1719323e66b1444835904730638b6e
+      internalID: 1123017930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_22
+      rect:
+        serializedVersion: 2
+        x: 8317
+        y: 4707
+        width: 1070
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3394223453a248942a2cca19a3c3d30e
+      internalID: -405638910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_23
+      rect:
+        serializedVersion: 2
+        x: 9360
+        y: 5352
+        width: 135
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82e0575719224641b0e5ca2d5f2fbe9
+      internalID: 697899510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_24
+      rect:
+        serializedVersion: 2
+        x: 9999
+        y: 5360
+        width: 135
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7fa786b0b66344cb96535cb5299af6
+      internalID: -255486478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_25
+      rect:
+        serializedVersion: 2
+        x: 10222
+        y: 5379
+        width: 226
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf6ce0cd101c8349a12e98a43525fd1
+      internalID: -2113189117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_26
+      rect:
+        serializedVersion: 2
+        x: 10633
+        y: 5417
+        width: 76
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042d328014bbd77459d2effd00dbaf48
+      internalID: -1514491336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_27
+      rect:
+        serializedVersion: 2
+        x: 10779
+        y: 5379
+        width: 76
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9484afdfac8b847b873bc2370680f5
+      internalID: -346862227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_28
+      rect:
+        serializedVersion: 2
+        x: 3471
+        y: 4707
+        width: 616
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaf395878d09e547b094811b22e2136
+      internalID: 1719394770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_29
+      rect:
+        serializedVersion: 2
+        x: 4852
+        y: 4707
+        width: 623
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a8c71921e43034ba1ca47641693780
+      internalID: -1715960788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_30
+      rect:
+        serializedVersion: 2
+        x: 9788
+        y: 5254
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c561fed41e29143aed2d81e6de74d1
+      internalID: -1256124856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_31
+      rect:
+        serializedVersion: 2
+        x: 9912
+        y: 5254
+        width: 79
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ea412c4632e3c4c97ad32c724ba34c
+      internalID: 1889300083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_32
+      rect:
+        serializedVersion: 2
+        x: 9940
+        y: 4989
+        width: 194
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d377b0465234e1f48b16990d6182c2c9
+      internalID: 992906418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_33
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4707
+        width: 449
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9f9a1803875954a86a0ee98cc48167
+      internalID: -1359681350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_34
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 4707
+        width: 604
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259726dd89b736a438dee092802477d8
+      internalID: -533556099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_35
+      rect:
+        serializedVersion: 2
+        x: 9728
+        y: 4788
+        width: 244
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f730eded3b4ddea4381f922eb9a6e780
+      internalID: -189955076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_36
+      rect:
+        serializedVersion: 2
+        x: 10029
+        y: 4707
+        width: 712
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fe360f8805b5647862f64540d9df57
+      internalID: 1749808821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_37
+      rect:
+        serializedVersion: 2
+        x: 10135
+        y: 5174
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89389f05d225734383993ae0c7d3a31
+      internalID: 122426494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_38
+      rect:
+        serializedVersion: 2
+        x: 8238
+        y: 4972
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d64ca145ca4b4bae897e068f7449f
+      internalID: -578370424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_39
+      rect:
+        serializedVersion: 2
+        x: 9609
+        y: 4999
+        width: 59
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e37f8d5dc3e5fb4bbabfe39ee1858be
+      internalID: 1288334665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_40
+      rect:
+        serializedVersion: 2
+        x: 9679
+        y: 4923
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab42c50c912222d409d21d3fd46989ea
+      internalID: 1308953790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_41
+      rect:
+        serializedVersion: 2
+        x: 8260
+        y: 4837
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265c544132abcaf409f754d6a0899f4c
+      internalID: 289900955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_42
+      rect:
+        serializedVersion: 2
+        x: 9631
+        y: 4864
+        width: 37
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6191a15ff536d140907702084e0fd08
+      internalID: 312348356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_43
+      rect:
+        serializedVersion: 2
+        x: 9950
+        y: 4777
+        width: 70
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8188352e8977f1741b7e2a3019b5f5ed
+      internalID: -2078764468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_44
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4533
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6760f81044acf0441b544ffe8a888c52
+      internalID: 1150741967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_45
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 4533
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ebe9853b10f31408eab6af971d4439
+      internalID: -1970234572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_46
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 4463
+        width: 97
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7aa332b1331cea4cad3396333dc33c4
+      internalID: 1441294817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_47
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 4360
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178b5b2a72e7eae4e8f9deeab42c2b3c
+      internalID: -1682719385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_48
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4387
+        width: 90
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce99e3378a5a60428b9ebcac2929c55
+      internalID: -1949001616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_49
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 4318
+        width: 116
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d142f2b8294434189f98613a042c50
+      internalID: 939025301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_50
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 4251
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d46c0e40a03644cb29d3871984b7ca
+      internalID: 639644630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_51
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 4270
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012161cd33db61245937f1305cc10a3e
+      internalID: -617718097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_52
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 4279
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94881136874d2dc43ae62bc3a3fcc8a8
+      internalID: 289005688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_53
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 4289
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ed316a3756c44784aeee4bdfc4a71
+      internalID: 149163457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_54
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 3802
+        width: 487
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021d5c046fc22f549b4e9a48b115e00a
+      internalID: -407006176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_55
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 3802
+        width: 383
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0dbc55d4d886c45b84e39278ea3f5d
+      internalID: 1066285110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_56
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 3802
+        width: 476
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d97f7e0d927ee141af6611c6d524e82
+      internalID: -1000685681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_57
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 3802
+        width: 417
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351af977e2f3d7742b99704217dbab9a
+      internalID: 947112058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_58
+      rect:
+        serializedVersion: 2
+        x: 6342
+        y: 3802
+        width: 400
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc461c5ee526fd4d881c383d1b07cf7
+      internalID: -1616895952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_59
+      rect:
+        serializedVersion: 2
+        x: 7675
+        y: 3802
+        width: 410
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a828e0b6cc8fc94fb5be802d58191b6
+      internalID: -1830459894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_60
+      rect:
+        serializedVersion: 2
+        x: 9007
+        y: 3802
+        width: 460
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4b990140aa8ca47852b205c2794563
+      internalID: -493486636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_61
+      rect:
+        serializedVersion: 2
+        x: 10362
+        y: 3802
+        width: 485
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a5d5cbe9884524b9168129f1bd6238
+      internalID: 261045900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 4133
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fdc9e06739912488ba319e77f168da
+      internalID: -1670118219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_63
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4105
+        width: 76
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f6bce671fea145995b53571aa3da9
+      internalID: -1595848392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_64
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 4056
+        width: 117
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7860b07083b017846a99b72eb120c707
+      internalID: -1509006026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_65
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4078
+        width: 70
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecc0760fca39574f80b1ba32d83c880
+      internalID: -1429061737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_66
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 4173
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed67177533309742b0ab7602af87cf0
+      internalID: 1655439915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_67
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 4084
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156597e2213280a48abefd80d501e3cc
+      internalID: 481803186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_68
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 3932
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ac1ca17fb0d42418133540ce52d576
+      internalID: 522011878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_69
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3938
+        width: 49
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade4555c2a1cf2040b8c1b68bd5e1883
+      internalID: -496096869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_70
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 3980
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b64f5c822ee4e64f9fc9971b96f5112
+      internalID: -326425169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_71
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3987
+        width: 149
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db982add455d10b4b9010da440fea20e
+      internalID: 2061940302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_72
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3921
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64531d1382ff9114493f41ea94b6bb0d
+      internalID: 1578926331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_73
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 2946
+        width: 428
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c90960a65774544b348f9f2a01605f
+      internalID: 63095902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_74
+      rect:
+        serializedVersion: 2
+        x: 6315
+        y: 3027
+        width: 427
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b92647de17dd484da03441e93152c7f
+      internalID: -480594149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_75
+      rect:
+        serializedVersion: 2
+        x: 7751
+        y: 3260
+        width: 227
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31af83690e90334c862ea0e8bcfa352
+      internalID: -296448613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_76
+      rect:
+        serializedVersion: 2
+        x: 9241
+        y: 3531
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7bcce18a532c64289a2b0d85f0f5a0
+      internalID: -1234865826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_77
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2897
+        width: 487
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7828ddda3570a4bab6f407dbd8a7ca
+      internalID: -1220014681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_78
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 2897
+        width: 517
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfdf7e7a9aba9541b9994f89950d0aa
+      internalID: -2337892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_79
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 2897
+        width: 507
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d029acbad188e4a910a714c1258314
+      internalID: -2075196629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_80
+      rect:
+        serializedVersion: 2
+        x: 7978
+        y: 3423
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b2f703a64933c4483861329526ee03
+      internalID: -1851650035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_81
+      rect:
+        serializedVersion: 2
+        x: 9241
+        y: 3249
+        width: 97
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8003b5db9645c143bce341a8da65eef
+      internalID: -39091949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_82
+      rect:
+        serializedVersion: 2
+        x: 10330
+        y: 2794
+        width: 487
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4cd91c265b9f34abf1a312d0262a0b
+      internalID: 1886774971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_83
+      rect:
+        serializedVersion: 2
+        x: 8027
+        y: 3287
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049f7ba54dadb07469f62c4b5e9e295c
+      internalID: -1939729905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_84
+      rect:
+        serializedVersion: 2
+        x: 9213
+        y: 3365
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdc95b6a9bd9cf48b21789119721367
+      internalID: -333911882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_85
+      rect:
+        serializedVersion: 2
+        x: 9446
+        y: 3325
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c87ba159d326654b92ffda20bc28879
+      internalID: 1943634586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_86
+      rect:
+        serializedVersion: 2
+        x: 7702
+        y: 3277
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4838dd23bf4ba4341a73accb532550d1
+      internalID: -732676977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_87
+      rect:
+        serializedVersion: 2
+        x: 7985
+        y: 3271
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479c2497379f1a044b4b6f33440ce253
+      internalID: 2068286935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_88
+      rect:
+        serializedVersion: 2
+        x: 9143
+        y: 3287
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ff22dbe7d7b1943bdd17a2b37b6d5e
+      internalID: 1800011547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_89
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 3222
+        width: 38
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdc399198eafcf42b49898494719952
+      internalID: -756260559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_90
+      rect:
+        serializedVersion: 2
+        x: 5399
+        y: 3211
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdfa7d8f043ad141a4d4d25bbf4e5c9
+      internalID: 228525399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_91
+      rect:
+        serializedVersion: 2
+        x: 6770
+        y: 3238
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d33bf695b6a65543ae4d849607d225e
+      internalID: 711356073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_92
+      rect:
+        serializedVersion: 2
+        x: 7810
+        y: 3141
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11e58aefa6f61b419325af122252912
+      internalID: -1680802853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_93
+      rect:
+        serializedVersion: 2
+        x: 7889
+        y: 3075
+        width: 78
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2f29cdea024794e965422c0a1dd440
+      internalID: 1922517208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_94
+      rect:
+        serializedVersion: 2
+        x: 7978
+        y: 3131
+        width: 38
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3425c555e2598143986c1a4920b5df9
+      internalID: -1440960947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_95
+      rect:
+        serializedVersion: 2
+        x: 9213
+        y: 3162
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b72c79b7c785249b6533599c3b7b06
+      internalID: -1186445484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_96
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 1992
+        width: 496
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77953399aba0224d940a8c7026565b5
+      internalID: -1836264154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_97
+      rect:
+        serializedVersion: 2
+        x: 7567
+        y: 1992
+        width: 518
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36157fc9869dd7f4f8cf2740d342e799
+      internalID: -1049248511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_98
+      rect:
+        serializedVersion: 2
+        x: 8921
+        y: 2821
+        width: 108
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c130953c107c3489b1353a3533f44f
+      internalID: 2018398075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_99
+      rect:
+        serializedVersion: 2
+        x: 8987
+        y: 2794
+        width: 382
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d84590991f18549b051d2a09f40e8f
+      internalID: -1319748924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_100
+      rect:
+        serializedVersion: 2
+        x: 10271
+        y: 2821
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369fbfeba6e8c9a4089cb1ce8ded9079
+      internalID: -1212353235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_101
+      rect:
+        serializedVersion: 2
+        x: 9035
+        y: 1992
+        width: 411
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1687755f7e57695499fe9cdceebb3bb3
+      internalID: -342197839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_102
+      rect:
+        serializedVersion: 2
+        x: 10378
+        y: 2703
+        width: 90
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd72ab2d9e36e6f4dada2ce2221eb7bf
+      internalID: 176154993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_103
+      rect:
+        serializedVersion: 2
+        x: 10505
+        y: 2752
+        width: 90
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e9e623873695f4b929e83afdbb0c35
+      internalID: 285474225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_104
+      rect:
+        serializedVersion: 2
+        x: 8987
+        y: 2655
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1161b2a2d60f6d9469640fdb40ebd274
+      internalID: -502090070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_105
+      rect:
+        serializedVersion: 2
+        x: 10400
+        y: 1992
+        width: 406
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f372d31c95a9745b85f30ba533f9ec
+      internalID: -1623950129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_106
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1992
+        width: 486
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea95b4dc332a0540a5d2c408047d36a
+      internalID: -813134727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_107
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1992
+        width: 466
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20596a5dce58f8141bc6cddcf17008bd
+      internalID: 551352348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_108
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1992
+        width: 484
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efae1442392ed44e887c4a91fd136a8
+      internalID: -951738337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_109
+      rect:
+        serializedVersion: 2
+        x: 4852
+        y: 1992
+        width: 509
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0048dfc72278c21428cf54f864bd75fe
+      internalID: 352254622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_110
+      rect:
+        serializedVersion: 2
+        x: 6206
+        y: 2276
+        width: 60
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036904f76973ee14495e28b5e01ba67c
+      internalID: -1512066308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_111
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1461
+        width: 330
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443063f15d1bb294b8b7116ec99ae574
+      internalID: -690791822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_112
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1461
+        width: 334
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cb78be76178ad4ca2b39cddec2bf49
+      internalID: -1062436253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_113
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1467
+        width: 360
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d81ebf5a24ef84498fcccaa42c0e352
+      internalID: 1687544656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_114
+      rect:
+        serializedVersion: 2
+        x: 4619
+        y: 1467
+        width: 363
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ccebfdbf2d0c64596e5c0e33d5282f
+      internalID: 213312346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_115
+      rect:
+        serializedVersion: 2
+        x: 6011
+        y: 1418
+        width: 303
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ae3c03d053a01419300bbddbdb78e8
+      internalID: 1084909470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_116
+      rect:
+        serializedVersion: 2
+        x: 7355
+        y: 1293
+        width: 319
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f6de0adcead1b45980bc5bc4bdf2b2
+      internalID: 741756067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_117
+      rect:
+        serializedVersion: 2
+        x: 8715
+        y: 1130
+        width: 324
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24141267f3f37af4891e40080197a1a0
+      internalID: 915055733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_118
+      rect:
+        serializedVersion: 2
+        x: 10077
+        y: 1088
+        width: 323
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d266f0816c46442aef3192606a3310
+      internalID: -1471279818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_119
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 184
+        width: 341
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed980c19566fca4186b71d7fc3fede2
+      internalID: 247424903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_120
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 184
+        width: 351
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7297751617624ae43ac1d9feda0da4cf
+      internalID: 1897636224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_121
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 184
+        width: 360
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aed8d0e9e2d70f40921503aebb582b5
+      internalID: -1565087029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_122
+      rect:
+        serializedVersion: 2
+        x: 4619
+        y: 475
+        width: 363
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66646f11bdbb14f4888303529c0d3dda
+      internalID: -1612902036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_123
+      rect:
+        serializedVersion: 2
+        x: 6011
+        y: 507
+        width: 49
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c22515fc26a0b4d94c594e7d11a170
+      internalID: -2084254202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_124
+      rect:
+        serializedVersion: 2
+        x: 6011
+        y: 564
+        width: 303
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da62dfa97327c6246a505a641f097cfc
+      internalID: 2084794161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_125
+      rect:
+        serializedVersion: 2
+        x: 7372
+        y: 564
+        width: 302
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34bcbdf7102f574087085d6d0bbb212
+      internalID: 765060000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_126
+      rect:
+        serializedVersion: 2
+        x: 8715
+        y: 556
+        width: 324
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bede937028c29b4a93ef6f7e744972c
+      internalID: 410642361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_127
+      rect:
+        serializedVersion: 2
+        x: 10077
+        y: 556
+        width: 323
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654ff0bb45d8a5b49aa5542d9612e7f9
+      internalID: 1003275974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_128
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 420
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc62d4c8d01f2148b3fc7ed55172107
+      internalID: -17255015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_129
+      rect:
+        serializedVersion: 2
+        x: 6158
+        y: 409
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76385b555c15344da8c59f71b2ab267
+      internalID: -1341409742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_130
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 184
+        width: 216
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4a76e6570bcf946a068c66c10c6079
+      internalID: -1631765678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_131
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 360
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ad4f75c68d0a843901677eab353699
+      internalID: 302006152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_132
+      rect:
+        serializedVersion: 2
+        x: 6136
+        y: 329
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caf28f8be9994a4684c1ec22a96c6dc
+      internalID: 1753927138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_133
+      rect:
+        serializedVersion: 2
+        x: 5963
+        y: 184
+        width: 194
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b136b7b5b1ff524aad8096924c7473f
+      internalID: -1501176541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strana 2_134
+      rect:
+        serializedVersion: 2
+        x: 6147
+        y: 252
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d1713f8035bec47b124d7c15c179ce
+      internalID: -1707899066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Strana 2_43: -2078764468
+      Strana 2_67: 481803186
+      Strana 2_106: -813134727
+      Strana 2_90: 228525399
+      Strana 2_29: -1715960788
+      Strana 2_3: 1836063605
+      Strana 2_130: -1631765678
+      Strana 2_104: -502090070
+      Strana 2_59: -1830459894
+      Strana 2_5: -1616702049
+      Strana 2_42: 312348356
+      Strana 2_34: -533556099
+      Strana 2_38: -578370424
+      Strana 2_73: 63095902
+      Strana 2_31: 1889300083
+      Strana 2_22: -405638910
+      Strana 2_102: 176154993
+      Strana 2_112: -1062436253
+      Strana 2_12: 997071538
+      Strana 2_86: -732676977
+      Strana 2_4: -1478565365
+      Strana 2_92: -1680802853
+      Strana 2_40: 1308953790
+      Strana 2_115: 1084909470
+      Strana 2_87: 2068286935
+      Strana 2_103: 285474225
+      Strana 2_46: 1441294817
+      Strana 2_124: 2084794161
+      Strana 2_108: -951738337
+      Strana 2_107: 551352348
+      Strana 2_120: 1897636224
+      Strana 2_61: 261045900
+      Strana 2_117: 915055733
+      Strana 2_0: 1097296679
+      Strana 2_30: -1256124856
+      Strana 2_20: 1387156727
+      Strana 2_62: -1670118219
+      Strana 2_128: -17255015
+      Strana 2_35: -189955076
+      Strana 2_132: 1753927138
+      Strana 2_13: -574984764
+      Strana 2_11: 394894600
+      Strana 2_37: 122426494
+      Strana 2_131: 302006152
+      Strana 2_83: -1939729905
+      Strana 2_49: 939025301
+      Strana 2_134: -1707899066
+      Strana 2_116: 741756067
+      Strana 2_17: 296082611
+      Strana 2_125: 765060000
+      Strana 2_26: -1514491336
+      Strana 2_9: 530453896
+      Strana 2_50: 639644630
+      Strana 2_74: -480594149
+      Strana 2_51: -617718097
+      Strana 2_101: -342197839
+      Strana 2_72: 1578926331
+      Strana 2_7: 625163319
+      Strana 2_15: 377417569
+      Strana 2_94: -1440960947
+      Strana 2_23: 697899510
+      Strana 2_79: -2075196629
+      Strana 2_41: 289900955
+      Strana 2_113: 1687544656
+      Strana 2_84: -333911882
+      Strana 2_81: -39091949
+      Strana 2_75: -296448613
+      Strana 2_45: -1970234572
+      Strana 2_129: -1341409742
+      Strana 2_60: -493486636
+      Strana 2_18: -733896130
+      Strana 2_53: 149163457
+      Strana 2_111: -690791822
+      Strana 2_85: 1943634586
+      Strana 2_127: 1003275974
+      Strana 2_82: 1886774971
+      Strana 2_133: -1501176541
+      Strana 2_70: -326425169
+      Strana 2_63: -1595848392
+      Strana 2_80: -1851650035
+      Strana 2_105: -1623950129
+      Strana 2_48: -1949001616
+      Strana 2_69: -496096869
+      Strana 2_65: -1429061737
+      Strana 2_95: -1186445484
+      Strana 2_52: 289005688
+      Strana 2_89: -756260559
+      Strana 2_71: 2061940302
+      Strana 2_55: 1066285110
+      Strana 2_93: 1922517208
+      Strana 2_21: 1123017930
+      Strana 2_58: -1616895952
+      Strana 2_109: 352254622
+      Strana 2_64: -1509006026
+      Strana 2_36: 1749808821
+      Strana 2_56: -1000685681
+      Strana 2_121: -1565087029
+      Strana 2_25: -2113189117
+      Strana 2_6: 2109214723
+      Strana 2_119: 247424903
+      Strana 2_57: 947112058
+      Strana 2_39: 1288334665
+      Strana 2_66: 1655439915
+      Strana 2_100: -1212353235
+      Strana 2_28: 1719394770
+      Strana 2_44: 1150741967
+      Strana 2_99: -1319748924
+      Strana 2_114: 213312346
+      Strana 2_14: 2063561972
+      Strana 2_77: -1220014681
+      Strana 2_2: -184131992
+      Strana 2_68: 522011878
+      Strana 2_32: 992906418
+      Strana 2_98: 2018398075
+      Strana 2_47: -1682719385
+      Strana 2_54: -407006176
+      Strana 2_24: -255486478
+      Strana 2_97: -1049248511
+      Strana 2_88: 1800011547
+      Strana 2_78: -2337892
+      Strana 2_96: -1836264154
+      Strana 2_8: -37082146
+      Strana 2_27: -346862227
+      Strana 2_118: -1471279818
+      Strana 2_19: 576965414
+      Strana 2_76: -1234865826
+      Strana 2_126: 410642361
+      Strana 2_16: 1955801975
+      Strana 2_91: 711356073
+      Strana 2_33: -1359681350
+      Strana 2_123: -2084254202
+      Strana 2_122: -1612902036
+      Strana 2_1: 1757376583
+      Strana 2_110: -1512066308
+      Strana 2_10: 1504630192
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,22 +1,24 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for fear of dark phobia
+ */
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Rendering.Universal;
 using System.Collections;
 
 public class FearOfDark : MonoBehaviour
 {
-
-    
-    [SerializeField] private Image dark_meter;
+    [SerializeField] public Image darkMeter;
     public Light2D flashlight;
-    public float fillRate = 1.0f; // Adjust this value to control how quickly the meter fills
+    private float fillRate = 2.0f; // Adjust this value to control how quickly the meter fills
 
     private bool isFillingDarkMeter = false;
 
     private void Start()
     {
-        dark_meter.fillAmount = 0;
+        darkMeter.fillAmount = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,8 +43,8 @@ public class FearOfDark : MonoBehaviour
     private void StopFillingDarkMeter()
     {
         isFillingDarkMeter = false;
-        dark_meter.fillAmount = 0; // Reset the dark meter
-        // Add any additional logic to stop filling the dark meter if needed
+        darkMeter.fillAmount = 0; // Reset the dark meter
+        
     }
 
     private IEnumerator FillDarkMeter()
@@ -52,11 +54,24 @@ public class FearOfDark : MonoBehaviour
             // Add to fill amount only when the flashlight is off
             if (flashlight != null && !flashlight.enabled)
             {
-                dark_meter.fillAmount += fillRate * (Time.deltaTime / 20);
+                darkMeter.fillAmount += fillRate * (Time.deltaTime / 10);
+                ColorChanger();
             }
 
+            if (darkMeter.fillAmount >= 1.0f)
+            {
+                GetComponent<Health>().TakeDamage(100);
+                darkMeter.fillAmount = 0f;
+                isFillingDarkMeter = false;
+            }
             // Add any additional conditions to break out of the loop if needed
             yield return null;
         }
+    }
+
+    private void ColorChanger()
+    {
+        Color fearColor = Color.Lerp(Color.gray, Color.red, darkMeter.fillAmount);
+        darkMeter.color = fearColor;
     }
 }
