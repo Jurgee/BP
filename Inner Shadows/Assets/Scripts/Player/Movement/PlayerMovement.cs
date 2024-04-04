@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool edge_3;
     private bool not_jump;
     public bool is_on_platform;
+    public bool inWater;
 
     public bool Aleft = false;
     public bool Dright = true;
@@ -59,10 +60,12 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("yVelocity", body.velocity.y);
 
         //is falling
-        if ((grounded || is_on_platform || (edge_1 || edge_2 || edge_3)) && body.velocity.y < 0)
+        if ((grounded || is_on_platform  || (edge_1 || edge_2 || edge_3)) && body.velocity.y < 0)
         {
             animator.SetTrigger("jump");
         }
+
+        
     }
     void Jump()
     {
@@ -73,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
         edge_2 = false;
         edge_3 = false;
         is_on_platform = false;
-
         animator.SetTrigger("jump");
         
     }
@@ -81,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body.freezeRotation = true; //stop rotating if collied
 
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" )
         {
             not_jump = true;
             grounded = true;
@@ -89,8 +91,9 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = false;
             edge_3 = false;
             is_on_platform = false;
-
+            inWater = false;
             
+
         }
         if(collision.gameObject.tag == "Edge_1")
         {
@@ -133,9 +136,19 @@ public class PlayerMovement : MonoBehaviour
             edge_1 = false;
             edge_2 = false;
             edge_3 = false;
+        }
 
        
-        }
-        
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ocean"))
+        {
+            not_jump = true;
+            inWater = true;
+        }
+    }
+
+    
 }

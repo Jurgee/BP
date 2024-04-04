@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for camera control
+ */
 using UnityEngine;
 
 public class CameraControler : MonoBehaviour

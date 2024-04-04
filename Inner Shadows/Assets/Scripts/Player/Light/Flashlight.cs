@@ -14,8 +14,8 @@ public class Flashlight : MonoBehaviour
     [SerializeField] private Light2D playerFlashSpot;
     [SerializeField] private Light2D playerSpotlight;
 
-    private float batteryDrainRate = 0.4f;
-    private float batteryRechargeRate = 0.2f;
+    public float batteryDrainRate = 0.4f;
+    public float batteryRechargeRate = 0.2f;
     
 
     private bool isRecharging = false;
@@ -123,7 +123,7 @@ public class Flashlight : MonoBehaviour
             if (flashlight.enabled)
             {
                 // Drain battery
-                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 10);
+                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 8);
 
                 // Decrease flashlight intensity as the battery level goes below 0.5
                 flashlight.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
@@ -147,7 +147,7 @@ public class Flashlight : MonoBehaviour
             {
                 playerSpotlight.enabled = entry.InCave ? false : true;
                 // Recharge battery
-                battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 1);
+                battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 8);
 
                 // Ensure battery level stays within the range [0, 1]
                 battery.fillAmount = Mathf.Clamp01(battery.fillAmount);

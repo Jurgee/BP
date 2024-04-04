@@ -13,6 +13,9 @@ TagManager:
   - Cave entry
   - Cave exit
   - Wall
+  - Ocean
+  - Rain
+  - Waterfall
   layers:
   - Default
   - TransparentFX
