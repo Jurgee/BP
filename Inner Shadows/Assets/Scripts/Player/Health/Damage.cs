@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    [SerializeField] private float damage;
+    public float damage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

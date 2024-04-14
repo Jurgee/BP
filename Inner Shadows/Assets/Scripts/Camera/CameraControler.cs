@@ -15,7 +15,7 @@ public class CameraControler : MonoBehaviour
     [SerializeField] private float lookDown;
     [SerializeField] private Camera cam;
 
-    private FearOfLost lostMeter;
+    private FearOfUnknown lostMeter;
     private float lookAhead;
     private Vector3 targetPosition;
 
@@ -23,7 +23,7 @@ public class CameraControler : MonoBehaviour
     private float transitionSpeed = 2f;
     private void Start()
     {
-        lostMeter = GameObject.FindObjectOfType<FearOfLost>();
+        lostMeter = GameObject.FindObjectOfType<FearOfUnknown>();
     }
     private void Update()
     {

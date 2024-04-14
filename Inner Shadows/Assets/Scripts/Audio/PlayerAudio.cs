@@ -7,20 +7,31 @@ public class PlayerAudio : MonoBehaviour
 
     [SerializeField] private Image height_fear_meter;
     [SerializeField] private AudioSource heart_beat_audio;
+    [SerializeField] public AudioSource footsteps;
     
     [SerializeField] private Health player_health;
     [SerializeField] private Light2D player_light;
-
+    private PlayerMovement movement;
 
     // Start is called before the first frame update
     void Start()
     {
         height_fear_meter.fillAmount = 0;
+        movement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.D))) && (movement.IsGrounded() || movement.IsOnPlatform()))
+        {
+            footsteps.enabled = true;
+        }
+        else
+        {
+            footsteps.enabled = false;
+        }
+
         HeartBeatAudio();
         KillPlayer();
     }
@@ -52,12 +63,9 @@ public class PlayerAudio : MonoBehaviour
     {
         if (height_fear_meter.fillAmount == 1)
         {
-
             player_health.GetComponent<Health>().TakeDamage(100);
             heart_beat_audio.Stop();
             height_fear_meter.fillAmount = 0f;
-
-
         }
     }
 

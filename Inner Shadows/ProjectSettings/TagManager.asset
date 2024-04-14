@@ -25,8 +25,8 @@ TagManager:
   - UI
   - Player
   - Background
-  - 
-  - 
+  - Platform
+  - Wall
   - 
   - 
   - 
@@ -56,11 +56,11 @@ TagManager:
   - name: Background Close
     uniqueID: 2133711281
     locked: 0
-  - name: Midground Close
-    uniqueID: 62963341
-    locked: 0
   - name: Midground
     uniqueID: 3271831057
+    locked: 0
+  - name: Midground Close
+    uniqueID: 62963341
     locked: 0
   - name: Ground
     uniqueID: 537455667

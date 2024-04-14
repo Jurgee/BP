@@ -21,6 +21,9 @@ public class CaveHand : MonoBehaviour
     private bool wasMovingRight = false; // Track previous right movement direction
     private bool wasMovingLeft = false;  // Track previous left movement direction
 
+    public float timer;
+    private float updateInterval; // Randomly generated interval for updating fear level
+
     void Start()
     {
         direction = GameObject.FindObjectOfType<PlayerMovement>();
@@ -29,12 +32,50 @@ public class CaveHand : MonoBehaviour
 
         leftOffset = transform.position - player.position;
         rightOffset = player.position - transform.position;
-
+        spriteRenderer.enabled = false;
         // Set the initial position of the hand
         transform.position = player.position + leftOffset;
+
+        // random timer
+        timer = 0f;
+        SetRandomUpdateInterval();
     }
 
     void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= updateInterval)
+        {
+            MoveHand();
+            SetRandomUpdateInterval(); // Set next random activation time
+        }
+    }
+
+    void MoveTowardsPlayer()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime); // Move towards the player
+    }
+
+    void DecreaseBatteryFillAmount()
+    {
+        if (battery != null)
+        {
+            battery.battery.fillAmount -= 0.3f; // Take some battery after hand hit
+
+            // Reset hand position
+            if (direction.Dright)
+            {
+                transform.position = player.position + leftOffset; // Reset position to the left offset
+            }
+            else if (direction.Aleft)
+            {
+                transform.position = player.position + rightOffset; // Reset position to the right offset
+            }
+        }
+    }
+
+    private void MoveHand()
     {
         bool inCaveWithFlashlight = false;
 
@@ -51,13 +92,15 @@ public class CaveHand : MonoBehaviour
 
         if (inCaveWithFlashlight)
         {
-
             if (direction.Dright) // Moving right
             {
                 if (wasMovingLeft) // If there was a change from left to right movement
                 {
+                    transform.localScale = new Vector3(2, 2, 2);
                     transform.position = player.position + leftOffset; // Reset position to the left offset
                     wasMovingLeft = false; // Reset the flag
+                    timer = 0f; // Reset the timer
+
                 }
                 else
                 {
@@ -71,8 +114,11 @@ public class CaveHand : MonoBehaviour
             {
                 if (wasMovingRight) // If there was a change from right to left movement
                 {
+                    transform.localScale = new Vector3(2, -2, 2);
                     transform.position = player.position + rightOffset; // Reset position to the right offset
                     wasMovingRight = false; // Reset the flag
+                    timer = 0f; // Reset the timer
+
                 }
                 else
                 {
@@ -89,28 +135,9 @@ public class CaveHand : MonoBehaviour
             }
         }
     }
-
-    void MoveTowardsPlayer()
+    private void SetRandomUpdateInterval()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime); // Move towards the player
-    }
-
-    void DecreaseBatteryFillAmount()
-    {
-        if (battery != null)
-        {
-            battery.battery.fillAmount -= 0.3f; // Take some battery after hand hit
-
-            // Reset cube position
-            if (direction.Dright)
-            {
-                transform.position = player.position + leftOffset; // Reset position to the left offset
-            }
-            else if (direction.Aleft)
-            {
-                transform.position = player.position + rightOffset; // Reset position to the right offset
-            }
-        }
+        updateInterval = Random.Range(1f, 5f); // Generate a random interval between 5 and 15 seconds
     }
 
 }

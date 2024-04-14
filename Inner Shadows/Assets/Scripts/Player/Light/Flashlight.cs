@@ -123,10 +123,10 @@ public class Flashlight : MonoBehaviour
             if (flashlight.enabled)
             {
                 // Drain battery
-                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 8);
+                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 100);
 
                 // Decrease flashlight intensity as the battery level goes below 0.5
-                flashlight.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
+                flashlight.intensity = Mathf.Lerp(4f, 0f, 1f - (battery.fillAmount / 0.5f));
                 playerFlashSpot.intensity = Mathf.Lerp(1f, 0f, 1f - (battery.fillAmount / 0.5f));
                 playerSpotlight.enabled = entry.InCave ? false : true;
 
