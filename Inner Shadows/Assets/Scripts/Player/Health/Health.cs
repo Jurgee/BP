@@ -10,7 +10,6 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private AudioSource player_death_sound;
     [SerializeField] private float starting_health;
     [SerializeField] private Light2D playerLight;
     [SerializeField] public Image spikyMeter;
@@ -64,8 +63,7 @@ public class Health : MonoBehaviour
 
         if (current_health <= 0)
         {
-            if (player_death_sound != null)
-                player_death_sound.Play();
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");
             dead = true;
             Respawn();
         }

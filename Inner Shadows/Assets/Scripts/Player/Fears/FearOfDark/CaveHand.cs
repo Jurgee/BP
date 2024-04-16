@@ -8,7 +8,7 @@ using UnityEngine;
 public class CaveHand : MonoBehaviour
 {
     public Transform player; // Reference to the player's transform
-    public float speed = 0.5f; // Speed at which the hand moves towards the player
+    public float speed = 2f; // Speed at which the hand moves towards the player
 
     private PlayerMovement direction;
     private CaveEntry[] entries;
@@ -96,7 +96,6 @@ public class CaveHand : MonoBehaviour
             {
                 if (wasMovingLeft) // If there was a change from left to right movement
                 {
-                    transform.localScale = new Vector3(2, 2, 2);
                     transform.position = player.position + leftOffset; // Reset position to the left offset
                     wasMovingLeft = false; // Reset the flag
                     timer = 0f; // Reset the timer
@@ -114,7 +113,6 @@ public class CaveHand : MonoBehaviour
             {
                 if (wasMovingRight) // If there was a change from right to left movement
                 {
-                    transform.localScale = new Vector3(2, -2, 2);
                     transform.position = player.position + rightOffset; // Reset position to the right offset
                     wasMovingRight = false; // Reset the flag
                     timer = 0f; // Reset the timer
@@ -137,7 +135,7 @@ public class CaveHand : MonoBehaviour
     }
     private void SetRandomUpdateInterval()
     {
-        updateInterval = Random.Range(1f, 5f); // Generate a random interval between 5 and 15 seconds
+        updateInterval = Random.Range(1f, 3f); // Generate a random interval between 1 and 3 seconds
     }
 
 }

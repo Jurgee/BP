@@ -31,6 +31,7 @@ public class CaveExit : MonoBehaviour
             foreach (var entry in entries)
             {
                 entry.InCave = false;
+                FindObjectOfType<AudioManager>().Stop("CaveTheme");
             }
         }
     }

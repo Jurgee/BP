@@ -24,15 +24,15 @@ TagManager:
   - Water
   - UI
   - Player
-  - Background
+  - B
   - Platform
   - Wall
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Minimap
+  - F
+  - FC
+  - M
+  - MC
+  - BC
   - 
   - 
   - 
@@ -62,11 +62,11 @@ TagManager:
   - name: Midground Close
     uniqueID: 62963341
     locked: 0
-  - name: Ground
-    uniqueID: 537455667
-    locked: 0
   - name: Player
     uniqueID: 3652123185
+    locked: 0
+  - name: Ground
+    uniqueID: 537455667
     locked: 0
   - name: Default
     uniqueID: 0
@@ -76,4 +76,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 874263729
+    locked: 0
+  - name: Minimap
+    uniqueID: 750307217
     locked: 0

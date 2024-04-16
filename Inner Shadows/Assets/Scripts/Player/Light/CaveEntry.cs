@@ -27,6 +27,7 @@ public class CaveEntry : MonoBehaviour
             foreach (var enter in entries)
             {
                 enter.InCave = true;
+                FindObjectOfType<AudioManager>().Play("CaveTheme");
             }
 
         }

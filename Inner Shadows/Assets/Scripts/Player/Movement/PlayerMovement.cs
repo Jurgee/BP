@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask platformLayer;
+    
 
     private Rigidbody2D body;
     private Animator animator;
@@ -23,58 +24,62 @@ public class PlayerMovement : MonoBehaviour
     public bool inWater;
 
     public float climbSpeed;
-    public bool Aleft = false;
-    public bool Dright = true;
+    public bool Aleft;
+    public bool Dright;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        
         climbSpeed = 15f;
 
     }
     private void Update()
     {
-        float horizontal_input = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(horizontal_input * speed, body.velocity.y);
-
-        //flip player left-right
-        if(horizontal_input > 0.01f)
+        if (!PauseMenu.gameIsPaused)
         {
-            transform.localScale = Vector3.one;
-            Dright = true;
-            Aleft = false;
-        }
-        else if(horizontal_input < -0.01f)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-            Aleft = true;
-            Dright = false;
+            float horizontal_input = Input.GetAxis("Horizontal");
+            body.velocity = new Vector2(horizontal_input * speed, body.velocity.y);
 
-        }
-
-
-        if(Input.GetKey(KeyCode.Space))
-        {
-            if (IsGrounded()  || IsOnPlatform()) 
+            //flip player left-right
+            if (horizontal_input > 0.01f)
             {
-                Jump();
+                transform.localScale = Vector3.one;
+                Dright = true;
+                Aleft = false;
             }
-        }
+            else if (horizontal_input < -0.01f)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+                Aleft = true;
+                Dright = false;
 
-        animator.SetBool("walk", horizontal_input != 0);
-        animator.SetBool("grounded", not_jump);
-        animator.SetFloat("yVelocity", body.velocity.y);
+            }
 
-        //is falling
-        if ((grounded || is_on_platform  || (edge_1 || edge_2)) && body.velocity.y < 0)
-        {
-            animator.SetTrigger("jump");
-        }
 
-        if (IsWalled() && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)))
-        {
-            body.velocity = new Vector2(body.velocity.x, climbSpeed);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                if (IsGrounded() || IsOnPlatform())
+                {
+                    Jump();
+                }
+            }
+
+            animator.SetBool("walk", horizontal_input != 0);
+            animator.SetBool("grounded", not_jump);
+            animator.SetFloat("yVelocity", body.velocity.y);
+
+            //is falling
+            if ((grounded || is_on_platform || (edge_1 || edge_2)) && body.velocity.y < 0)
+            {
+                animator.SetTrigger("jump");
+            }
+
+            if (IsWalled() && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)))
+            {
+                body.velocity = new Vector2(body.velocity.x, climbSpeed);
+            }
         }
 
 
@@ -88,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
         edge_2 = false;
         is_on_platform = false;
         animator.SetTrigger("jump");
+        FindObjectOfType<AudioManager>().Play("Jump");
         
     }
     private void OnCollisionEnter2D(Collision2D collision)

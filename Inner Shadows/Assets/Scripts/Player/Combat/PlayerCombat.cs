@@ -19,7 +19,8 @@ public class PlayerCombat : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) == true && canAttack) // left mouse clicked
+
+        if (Input.GetMouseButtonDown(0) == true && canAttack && !PauseMenu.gameIsPaused) // left mouse clicked, can attack and the game is not paused
         {
             Attack();
         }
@@ -28,6 +29,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         animator.SetTrigger("attack"); // Set trigger to attack
+        FindObjectOfType<AudioManager>().Play("Slash");
         StartCoroutine(AttackCooldown()); // Start cooldown
     }
 

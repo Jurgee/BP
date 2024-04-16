@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0dd06ff15e93c2d438fc2f470e54365d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Trushdex
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 05c000011842d0040b9b5ab872a595e0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

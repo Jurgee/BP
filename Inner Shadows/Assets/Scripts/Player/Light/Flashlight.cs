@@ -14,8 +14,8 @@ public class Flashlight : MonoBehaviour
     [SerializeField] private Light2D playerFlashSpot;
     [SerializeField] private Light2D playerSpotlight;
 
-    public float batteryDrainRate = 0.4f;
-    public float batteryRechargeRate = 0.2f;
+    private float batteryDrainRate = 0.1f;
+    private float batteryRechargeRate = 0.2f;
     
 
     private bool isRecharging = false;
@@ -41,13 +41,16 @@ public class Flashlight : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && canToggleFlashlight)
+        if (!PauseMenu.gameIsPaused)
         {
-            ToggleFlashlight();
+            if (Input.GetKeyDown(KeyCode.F) && canToggleFlashlight)
+            {
+                ToggleFlashlight();
+            }
+
+            UpdateBatteryLevel();
         }
 
-        UpdateBatteryLevel();
-        
     }
 
     void ToggleFlashlight()
@@ -91,7 +94,7 @@ public class Flashlight : MonoBehaviour
         {
             flashlight.enabled = true;
             playerFlashSpot.enabled = true;
-
+            FindObjectOfType<AudioManager>().Play("FlashlightON");
             playerSpotlight.enabled = !entry.InCave;
 
             SetBatteryVisibility(true);
@@ -106,7 +109,7 @@ public class Flashlight : MonoBehaviour
         {
             flashlight.enabled = false;
             playerFlashSpot.enabled = false;
-
+            FindObjectOfType<AudioManager>().Play("FlashlightOFF");
             playerSpotlight.enabled = !entry.InCave;
 
             isRecharging = true; // Start recharging when turning off the flashlight
@@ -123,7 +126,7 @@ public class Flashlight : MonoBehaviour
             if (flashlight.enabled)
             {
                 // Drain battery
-                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 100);
+                battery.fillAmount -= batteryDrainRate * (Time.deltaTime / 15);
 
                 // Decrease flashlight intensity as the battery level goes below 0.5
                 flashlight.intensity = Mathf.Lerp(4f, 0f, 1f - (battery.fillAmount / 0.5f));
@@ -133,12 +136,7 @@ public class Flashlight : MonoBehaviour
                 // If the battery is empty, turn off the flashlight and start recharging
                 if (battery.fillAmount <= 0f)
                 {
-                    flashlight.enabled = false;
-                    playerFlashSpot.enabled = false;
-
-                    playerSpotlight.enabled = entry.InCave ? false : true;
-
-                    isRecharging = true; // Start recharging when the battery is empty
+                    TurnOffFlashlight();
                     canToggleFlashlight = false; // Disable flashlight toggle until the battery is full
                 }
 
@@ -147,7 +145,7 @@ public class Flashlight : MonoBehaviour
             {
                 playerSpotlight.enabled = entry.InCave ? false : true;
                 // Recharge battery
-                battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 8);
+                battery.fillAmount += batteryRechargeRate * (Time.deltaTime / 15);
 
                 // Ensure battery level stays within the range [0, 1]
                 battery.fillAmount = Mathf.Clamp01(battery.fillAmount);
