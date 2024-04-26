@@ -13,12 +13,14 @@ public class FearOfDark : MonoBehaviour
     [SerializeField] public Image darkMeter;
     public Light2D flashlight;
     private float fillRate = 2.0f; // Adjust this value to control how quickly the meter fills
+    public bool isFeared;
 
     private bool isFillingDarkMeter = false;
 
     private void Start()
     {
         darkMeter.fillAmount = 0;
+        isFeared = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,23 +51,27 @@ public class FearOfDark : MonoBehaviour
 
     private IEnumerator FillDarkMeter()
     {
-        while (isFillingDarkMeter)
+        if (isFeared)
         {
-            // Add to fill amount only when the flashlight is off
-            if (flashlight != null && !flashlight.enabled)
+            while (isFillingDarkMeter)
             {
-                darkMeter.fillAmount += fillRate * (Time.deltaTime / 10);
-                ColorChanger();
-            }
+                // Add to fill amount only when the flashlight is off
+                if (flashlight != null && !flashlight.enabled)
+                {
+                    darkMeter.fillAmount += fillRate * (Time.deltaTime / 10);
+                    ColorChanger();
+                }
 
-            if (darkMeter.fillAmount >= 1.0f)
-            {
-                GetComponent<Health>().TakeDamage(100);
-                darkMeter.fillAmount = 0f;
-                isFillingDarkMeter = false;
+                if (darkMeter.fillAmount >= 1.0f)
+                {
+                    GetComponent<Health>().TakeDamage(100);
+                    darkMeter.fillAmount = 0f;
+                    isFillingDarkMeter = false;
+                }
+                // Add any additional conditions to break out of the loop if needed
+                yield return null;
             }
-            // Add any additional conditions to break out of the loop if needed
-            yield return null;
+            
         }
     }
 

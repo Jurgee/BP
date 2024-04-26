@@ -21,10 +21,13 @@ public class FearOfUnknown : MonoBehaviour
     private Vector3 guidepostPosition;
     private bool isCounting;
 
+
+    public bool isFeared;
     private void Start()
     {
         fearMeter.fillAmount = 0;
         fearLevel = 0;
+        isFeared = true;
         
     }
 
@@ -49,7 +52,7 @@ public class FearOfUnknown : MonoBehaviour
     private void Update()
     {
         // Check if we are allowed to start counting.
-        if (isCounting)
+        if (isCounting && isFeared)
         {
             if(playerMovement.is_on_platform || playerMovement.edge_1 || playerMovement.grounded || playerMovement.edge_2)
             {

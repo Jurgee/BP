@@ -16,7 +16,7 @@ public class MinimapControl : MonoBehaviour
         minimapFrame.enabled = false;
         minimapMask.enabled = false;
         maximapRender.enabled = false;
-        minimapAcquired = true; // should be false
+        minimapAcquired = false; // should be false
     }
     void Update()
     {

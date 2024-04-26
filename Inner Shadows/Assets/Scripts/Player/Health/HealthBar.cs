@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Health player_health;
+   
     [SerializeField] private Image current_healthbar;
 
     [SerializeField] private Sprite fullHealthHead;
@@ -24,7 +25,7 @@ public class HealthBar : MonoBehaviour
 
     private void UpdateHealthBar()
     {
-        float healthPercentage = player_health.current_health / 5f;
+        float healthPercentage = player_health.current_health / player_health.starting_health;
 
         // Change player head image based on health percentage
         if (healthPercentage >= 0.7f)

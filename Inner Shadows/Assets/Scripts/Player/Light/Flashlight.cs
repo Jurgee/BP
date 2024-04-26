@@ -14,12 +14,13 @@ public class Flashlight : MonoBehaviour
     [SerializeField] private Light2D playerFlashSpot;
     [SerializeField] private Light2D playerSpotlight;
 
-    private float batteryDrainRate = 0.1f;
+    public float batteryDrainRate;
     private float batteryRechargeRate = 0.2f;
     
 
     private bool isRecharging = false;
     private bool canToggleFlashlight = true;
+    public bool canUseFlashlight;
    
 
     private CaveEntry[] caveEntries; 
@@ -37,13 +38,14 @@ public class Flashlight : MonoBehaviour
         // Get the CaveEntry script attached to the same GameObject
         caveEntries = GameObject.FindObjectsOfType<CaveEntry>(); // Find all caveEntries
        
+        batteryDrainRate = 0.4f;
     }
 
     void Update()
     {
         if (!PauseMenu.gameIsPaused)
         {
-            if (Input.GetKeyDown(KeyCode.F) && canToggleFlashlight)
+            if (Input.GetKeyDown(KeyCode.F) && canToggleFlashlight && canUseFlashlight)
             {
                 ToggleFlashlight();
             }

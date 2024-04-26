@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: 75bcdec28f1ae6346b7662b478f6f3a8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nercromancer_0
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 7058
+        width: 386
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016108c3f946b9b4c85e67b975e2b773
+      internalID: 129354260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_1
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 7062
+        width: 387
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea45e36bbcb4c346b67fafb9c7173f5
+      internalID: 228224268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_2
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 7083
+        width: 386
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1730e983e86a24478e0583161c8d381
+      internalID: 895056548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_3
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 7092
+        width: 391
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03c9fd1169b5bf459c4e45adb303c6f
+      internalID: 1563215575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_4
+      rect:
+        serializedVersion: 2
+        x: 6334
+        y: 7088
+        width: 378
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24e28541845e6419b5d1643a3c3280
+      internalID: -649187801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_5
+      rect:
+        serializedVersion: 2
+        x: 7778
+        y: 7077
+        width: 389
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9389b2b02099d4c99742123c6dbbc4
+      internalID: -980536002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_6
+      rect:
+        serializedVersion: 2
+        x: 9220
+        y: 7060
+        width: 395
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2914b6a6c39ec94fbea42b2e61e32b6
+      internalID: 1228255815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_7
+      rect:
+        serializedVersion: 2
+        x: 10678
+        y: 7058
+        width: 386
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c2470f4e5f70a4fbea95a283bd98f4
+      internalID: -2027734540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_8
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 5898
+        width: 351
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828a075fe1944a040abe7e58fca11c5c
+      internalID: -2112240023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_9
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 5880
+        width: 360
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1740fe2d0884d544bbdd6fd297d2aa69
+      internalID: -1540924093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_10
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 5874
+        width: 360
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a08c4686361d1478aee38d6a894c81
+      internalID: -1294852272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_11
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 5857
+        width: 357
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beff86b1efa23c04b9c83e105305457d
+      internalID: 1355871675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_12
+      rect:
+        serializedVersion: 2
+        x: 6367
+        y: 5866
+        width: 360
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dfa567953db7c498ab2aade4633c56
+      internalID: -1976885453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_13
+      rect:
+        serializedVersion: 2
+        x: 7821
+        y: 5874
+        width: 345
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aae0a3043a6724883b135e8d946c5a
+      internalID: 1314453360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_14
+      rect:
+        serializedVersion: 2
+        x: 9254
+        y: 5892
+        width: 360
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d026aa4e069dc047866493cfc80d9c7
+      internalID: -887032894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_15
+      rect:
+        serializedVersion: 2
+        x: 10705
+        y: 5909
+        width: 362
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6120fd8777e9a54894a043c18a3b91d
+      internalID: -653146128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_16
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 4749
+        width: 389
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd1fc52be6eaf143a295c590f5fa709
+      internalID: -1990573824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_17
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 4749
+        width: 365
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ef5e8a58fe2cf45ab031f11b0e66d8
+      internalID: 468342216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_18
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 4758
+        width: 381
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010ba59682b39854895055a5be67a31b
+      internalID: 1902583019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_19
+      rect:
+        serializedVersion: 2
+        x: 4889
+        y: 4770
+        width: 379
+        height: 661
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1133dda6c8f2d9459b4d00ad3c7a2e7
+      internalID: 1431225289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_20
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 4776
+        width: 383
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0894c34f405f5468ffdb5c68b69de5
+      internalID: -2131556036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_21
+      rect:
+        serializedVersion: 2
+        x: 7784
+        y: 4785
+        width: 377
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0d57233a6abf8458355a9fbe5256b2
+      internalID: 1640705653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_22
+      rect:
+        serializedVersion: 2
+        x: 9226
+        y: 4790
+        width: 386
+        height: 686
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2467e029700a0de4f93a3a4ac057f43c
+      internalID: -2142238366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_23
+      rect:
+        serializedVersion: 2
+        x: 10675
+        y: 4796
+        width: 386
+        height: 674
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4149cd89213bd49803063b8ec2686a
+      internalID: 1903679977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_24
+      rect:
+        serializedVersion: 2
+        x: 12115
+        y: 4783
+        width: 544
+        height: 778
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fe96f1c012e6f4e8400fff6d3addab
+      internalID: -1720012290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_25
+      rect:
+        serializedVersion: 2
+        x: 13564
+        y: 4773
+        width: 600
+        height: 849
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739521fea28982a4bb41291dcf459142
+      internalID: 905055010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_26
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 4768
+        width: 652
+        height: 883
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8eed125c4cd6e4fa3d588cab159847
+      internalID: -49552838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_27
+      rect:
+        serializedVersion: 2
+        x: 16441
+        y: 4757
+        width: 676
+        height: 918
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c580df2cca178547887ac23f531b01d
+      internalID: -524062883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_28
+      rect:
+        serializedVersion: 2
+        x: 17637
+        y: 4591
+        width: 728
+        height: 919
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac83e8874134a214bb80aa313c591601
+      internalID: 1489554402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_29
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1269
+        width: 401
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff3a8b409fadb14a9dcbf0e6eaab991
+      internalID: 551298298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_30
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1310
+        width: 397
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dbb80c6e343e5408caf3e1f7be1ccd
+      internalID: 693893592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_31
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 1309
+        width: 394
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf1477dd6b149746a81d3c7ba515c82
+      internalID: -43053999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_32
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 1301
+        width: 385
+        height: 458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33dd90ff4b4216409f0ae01d40ab92c
+      internalID: -976101701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_33
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 1272
+        width: 382
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae98a3e6679d0e741980b5f85cf8b9cb
+      internalID: -63303596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_34
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 117
+        width: 371
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec312f1b920274faa74f2328f3eee9
+      internalID: 1682663818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_35
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 141
+        width: 411
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb431e319ed6284a9742e406f1d988d
+      internalID: 1867241405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_36
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 156
+        width: 426
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3fb3317fa558c4e85c4a02037f28ca
+      internalID: 969257586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_37
+      rect:
+        serializedVersion: 2
+        x: 4857
+        y: 153
+        width: 434
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7273d41c9d9274941aa584161e13bc62
+      internalID: 240930494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_38
+      rect:
+        serializedVersion: 2
+        x: 6262
+        y: 169
+        width: 471
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c24b439d53b044a945811c4a6fdb01
+      internalID: 616052433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_39
+      rect:
+        serializedVersion: 2
+        x: 7704
+        y: 166
+        width: 404
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d068c674308cb4aaf514f79da5de0c
+      internalID: 1548928133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_40
+      rect:
+        serializedVersion: 2
+        x: 9128
+        y: 171
+        width: 463
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83b9ca600bb8054d8fc6b77089bc07b
+      internalID: 603075693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_41
+      rect:
+        serializedVersion: 2
+        x: 10543
+        y: 144
+        width: 470
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab896b64267501c44938f2900c1c6ecf
+      internalID: -653385548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nercromancer_42
+      rect:
+        serializedVersion: 2
+        x: 11986
+        y: 144
+        width: 497
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04de28b4541482542a2be290dac972db
+      internalID: -433221846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Nercromancer_15: -653146128
+      Nercromancer_26: -49552838
+      Nercromancer_38: 616052433
+      Nercromancer_3: 1563215575
+      Nercromancer_19: 1431225289
+      Nercromancer_1: 228224268
+      Nercromancer_5: -980536002
+      Nercromancer_20: -2131556036
+      Nercromancer_29: 551298298
+      Nercromancer_7: -2027734540
+      Nercromancer_13: 1314453360
+      Nercromancer_27: -524062883
+      Nercromancer_11: 1355871675
+      Nercromancer_39: 1548928133
+      Nercromancer_18: 1902583019
+      Nercromancer_12: -1976885453
+      Nercromancer_35: 1867241405
+      Nercromancer_36: 969257586
+      Nercromancer_22: -2142238366
+      Nercromancer_33: -63303596
+      Nercromancer_28: 1489554402
+      Nercromancer_31: -43053999
+      Nercromancer_24: -1720012290
+      Nercromancer_32: -976101701
+      Nercromancer_16: -1990573824
+      Nercromancer_30: 693893592
+      Nercromancer_41: -653385548
+      Nercromancer_37: 240930494
+      Nercromancer_42: -433221846
+      Nercromancer_23: 1903679977
+      Nercromancer_17: 468342216
+      Nercromancer_40: 603075693
+      Nercromancer_6: 1228255815
+      Nercromancer_8: -2112240023
+      Nercromancer_2: 895056548
+      Nercromancer_4: -649187801
+      Nercromancer_0: 129354260
+      Nercromancer_14: -887032894
+      Nercromancer_25: 905055010
+      Nercromancer_10: -1294852272
+      Nercromancer_21: 1640705653
+      Nercromancer_9: -1540924093
+      Nercromancer_34: 1682663818
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

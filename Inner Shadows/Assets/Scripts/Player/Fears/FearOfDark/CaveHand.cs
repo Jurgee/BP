@@ -24,6 +24,8 @@ public class CaveHand : MonoBehaviour
     public float timer;
     private float updateInterval; // Randomly generated interval for updating fear level
 
+    public bool scared;
+
     void Start()
     {
         direction = GameObject.FindObjectOfType<PlayerMovement>();
@@ -39,6 +41,8 @@ public class CaveHand : MonoBehaviour
         // random timer
         timer = 0f;
         SetRandomUpdateInterval();
+
+        scared = true;
     }
 
     void Update()
@@ -77,61 +81,65 @@ public class CaveHand : MonoBehaviour
 
     private void MoveHand()
     {
-        bool inCaveWithFlashlight = false;
-
-        foreach (var entry in entries)
+        if (scared)
         {
-            if (entry.InCave && battery.flashlight.enabled)
+            bool inCaveWithFlashlight = false;
+
+            foreach (var entry in entries)
             {
-                inCaveWithFlashlight = true;
-                break; // In cave and flashlight is on
+                if (entry.InCave && battery.flashlight.enabled)
+                {
+                    inCaveWithFlashlight = true;
+                    break; // In cave and flashlight is on
+                }
+            }
+
+            spriteRenderer.enabled = inCaveWithFlashlight;
+
+            if (inCaveWithFlashlight)
+            {
+                if (direction.Dright) // Moving right
+                {
+                    if (wasMovingLeft) // If there was a change from left to right movement
+                    {
+                        transform.position = player.position + leftOffset; // Reset position to the left offset
+                        wasMovingLeft = false; // Reset the flag
+                        timer = 0f; // Reset the timer
+
+                    }
+                    else
+                    {
+                        MoveTowardsPlayer();
+                    }
+
+                    wasMovingRight = true; // Set the flag for right movement
+                }
+
+                if (direction.Aleft) // Moving left
+                {
+                    if (wasMovingRight) // If there was a change from right to left movement
+                    {
+                        transform.position = player.position + rightOffset; // Reset position to the right offset
+                        wasMovingRight = false; // Reset the flag
+                        timer = 0f; // Reset the timer
+
+                    }
+                    else
+                    {
+                        MoveTowardsPlayer();
+                    }
+
+                    wasMovingLeft = true; // Set the flag for left movement
+                }
+
+                // Check if the hand is at the player's position and decrease battery fill amount
+                if (transform.position == player.position)
+                {
+                    DecreaseBatteryFillAmount();
+                }
             }
         }
-
-        spriteRenderer.enabled = inCaveWithFlashlight;
-
-        if (inCaveWithFlashlight)
-        {
-            if (direction.Dright) // Moving right
-            {
-                if (wasMovingLeft) // If there was a change from left to right movement
-                {
-                    transform.position = player.position + leftOffset; // Reset position to the left offset
-                    wasMovingLeft = false; // Reset the flag
-                    timer = 0f; // Reset the timer
-
-                }
-                else
-                {
-                    MoveTowardsPlayer();
-                }
-
-                wasMovingRight = true; // Set the flag for right movement
-            }
-
-            if (direction.Aleft) // Moving left
-            {
-                if (wasMovingRight) // If there was a change from right to left movement
-                {
-                    transform.position = player.position + rightOffset; // Reset position to the right offset
-                    wasMovingRight = false; // Reset the flag
-                    timer = 0f; // Reset the timer
-
-                }
-                else
-                {
-                    MoveTowardsPlayer();
-                }
-
-                wasMovingLeft = true; // Set the flag for left movement
-            }
-
-            // Check if the hand is at the player's position and decrease battery fill amount
-            if (transform.position == player.position)
-            {
-                DecreaseBatteryFillAmount();
-            }
-        }
+        
     }
     private void SetRandomUpdateInterval()
     {

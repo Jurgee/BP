@@ -4,28 +4,40 @@
  * Description: Script for player health and fear of pointed objects
  */
 
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float starting_health;
-    [SerializeField] private Light2D playerLight;
+    // fear of pointed objects
     [SerializeField] public Image spikyMeter;
+    public bool isFearedOfSpikes;
+
+    [SerializeField] public float starting_health;
+    [SerializeField] private Light2D playerLight;
     
     private CaveEntry[] entries;
+    [Header("Fears")]
     private FearOfHeights heights;
     private FearOfDark dark;
     private FearOfUnknown lost;
     private FearOfDeath death;
+    private FearOfWater water;
 
+    [Header("Others")]
     private Vector3 respawnPosition;
     private float timeSinceLastDamage = 0f;
     private float resetTime = 20f; //20s
-    public float current_health { get; private set; }
+    public float current_health;
     public bool dead;
 
+    [Header("iFrames")] 
+    [SerializeField] private float iFramesDur;
+    [SerializeField] private int numOfFlashes;
+    private SpriteRenderer spriteRenderer;
     
     private void Awake()
     {
@@ -35,9 +47,12 @@ public class Health : MonoBehaviour
         dark = GetComponent<FearOfDark>();
         lost = GetComponent<FearOfUnknown>();
         death = GetComponent<FearOfDeath>();
+        water = GetComponent<FearOfWater>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         spikyMeter.fillAmount = 0f;
         entries = GameObject.FindObjectsOfType<CaveEntry>(); // Find all objects
+        isFearedOfSpikes = true;
     }
     void Update()
     {
@@ -60,14 +75,18 @@ public class Health : MonoBehaviour
     {
         current_health -= damage;
         current_health = Mathf.Clamp(current_health, 0, starting_health);
-
+        
         if (current_health <= 0)
         {
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
             dead = true;
             Respawn();
         }
-
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("PlayerHit");
+            StartCoroutine(Invunerability());
+        }
         // Reset the time since last damage when the player takes damage
         timeSinceLastDamage = 0f;
     }
@@ -75,21 +94,25 @@ public class Health : MonoBehaviour
     // Function for pointed objects
     public void TakeSpikyDamage(float damage)
     {
-        spikyMeter.fillAmount += 0.2f;
+        if (isFearedOfSpikes)
+        {
+            spikyMeter.fillAmount += 0.2f;
 
-        if (spikyMeter.fillAmount <= 0.4f)
-        {
-            TakeDamage(damage);
+            if (spikyMeter.fillAmount <= 0.4f)
+            {
+                TakeDamage(damage);
+            }
+            else if (spikyMeter.fillAmount <= 0.8f)
+            {
+                TakeDamage(damage * 2);
+            }
+            else if (spikyMeter.fillAmount <= 1f)
+            {
+                TakeDamage(damage * 3);
+            }
+            ColorChanger();
         }
-        else if (spikyMeter.fillAmount <= 0.8f)
-        {
-            TakeDamage(damage * 2);
-        }
-        else if (spikyMeter.fillAmount <= 1f)
-        {
-            TakeDamage(damage * 3);
-        }
-        ColorChanger();
+        
     }
     // Add health
     public void AddHealth(float _value)
@@ -121,6 +144,7 @@ public class Health : MonoBehaviour
         dark.darkMeter.fillAmount = 0f;
         heights.fearLevel = 0f;
         spikyMeter.fillAmount = 0f;
+        water.waterMeter.fillAmount = 0f;
     }
 
     // Reset cave bool values if player dies
@@ -141,5 +165,18 @@ public class Health : MonoBehaviour
         spikyMeter.color = fearColor;
     }
 
+    private IEnumerator Invunerability()
+    {
+         Physics2D.IgnoreLayerCollision(6,7, true);
+         for (int i = 0; i < numOfFlashes; i++)
+         {
+             spriteRenderer.color = new Color(0.5943396f, 0.3336152f, 0.3336152f, 0.5f);
+             yield return new WaitForSeconds(iFramesDur / (numOfFlashes * 2));
+             spriteRenderer.color = new Color(0.6320754f, 0.6320754f, 0.6320754f, 1f);
+             yield return new WaitForSeconds(iFramesDur / (numOfFlashes * 2));
+
+        }
+         Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
     
 }

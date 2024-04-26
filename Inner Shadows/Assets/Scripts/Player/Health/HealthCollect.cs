@@ -10,6 +10,7 @@ public class HealthCollect : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.GetComponent<Health>().AddHealth(healthValue);
+            FindObjectOfType<AudioManager>().Play("heartPick");
             gameObject.SetActive(false);
         }
     }

@@ -17,6 +17,7 @@ public class FearOfHeights : MonoBehaviour
     public Image fear_meter;
     private float groundY;
     public float previousY;
+    public bool isFeared;
 
     public float fearLevel = 0;
     private float decreaseRate = 0.4f;
@@ -30,58 +31,63 @@ public class FearOfHeights : MonoBehaviour
         fear_meter.fillAmount = 0;
         groundY = Mathf.Abs(player.position.y); // Store the absolute value of Y
         previousY = groundY;
+        isFeared = true;
     }
 
     private void Update()
     {
-        float currentY = Mathf.Abs(player.position.y); // Get the absolute value of current Y
-
-        if (player_movement.edge_1 || player_movement.edge_2)
+        if (isFeared)
         {
-            FearBarFiller();
-            ColorChanger();
+            float currentY = Mathf.Abs(player.position.y); // Get the absolute value of current Y
 
-            if (CheckEdge() == 1) //edge 1
+            if (player_movement.edge_1 || player_movement.edge_2)
             {
-                onEdgeIncreaseRate = 0.3f;
-            }
-            else if (CheckEdge() == 2) //edge 2
-            {
-                onEdgeIncreaseRate = 0.6f;
+                FearBarFiller();
+                ColorChanger();
+
+                if (CheckEdge() == 1) //edge 1
+                {
+                    onEdgeIncreaseRate = 0.3f;
+                }
+                else if (CheckEdge() == 2) //edge 2
+                {
+                    onEdgeIncreaseRate = 0.6f;
+                }
+
+                if (timeSinceLastIncrease >= timeBetweenIncreases)
+                {
+                    fearLevel += onEdgeIncreaseRate;
+                    timeSinceLastIncrease = 0.0f;
+                }
+
+                // Increment the time since the last increase.
+                timeSinceLastIncrease += (Time.deltaTime * smoothSpeed);
             }
 
-            if (timeSinceLastIncrease >= timeBetweenIncreases)
+            else if (player_movement.IsOnPlatform() || player_movement.IsWalled())
             {
-                fearLevel += onEdgeIncreaseRate;
-                timeSinceLastIncrease = 0.0f;
-            }
+                // Check if the player is moving upward or downward
+                if (currentY != previousY)
+                {
+                    float deltaHeight = currentY - previousY;
+                    fearLevel += deltaHeight * 0.4f; // Adjust multiplier as needed
+                }
 
-            // Increment the time since the last increase.
-            timeSinceLastIncrease += (Time.deltaTime * smoothSpeed);
+                previousY = currentY;
+
+                FearBarFiller();
+                ColorChanger();
+            }
+            else if (player_movement.IsGrounded())
+            {
+                groundY = Mathf.Abs(player.position.y);
+                previousY = groundY;
+                fearLevel = Mathf.Max(0, fearLevel - decreaseRate * (Time.deltaTime * smoothSpeed));
+                FearBarFiller();
+                ColorChanger();
+            }
         }
-
-        else if (player_movement.IsOnPlatform() || player_movement.IsWalled())
-        {
-            // Check if the player is moving upward or downward
-            if (currentY != previousY)
-            {
-                float deltaHeight = currentY - previousY;
-                fearLevel += deltaHeight * 0.4f; // Adjust multiplier as needed
-            }
-
-            previousY = currentY;
-
-            FearBarFiller();
-            ColorChanger();
-        }
-        else if (player_movement.IsGrounded())
-        {
-            groundY = Mathf.Abs(player.position.y);
-            previousY = groundY;
-            fearLevel = Mathf.Max(0, fearLevel - decreaseRate * (Time.deltaTime * smoothSpeed));
-            FearBarFiller();
-            ColorChanger();
-        }
+        
         
     }
     // Fill the bar

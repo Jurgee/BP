@@ -24,7 +24,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - B
+  - Enemy
   - Platform
   - Wall
   - Minimap
@@ -33,10 +33,10 @@ TagManager:
   - M
   - MC
   - BC
-  - 
-  - 
-  - 
-  - 
+  - B
+  - Crystal
+  - Potions
+  - SkillPoints
   - 
   - 
   - 

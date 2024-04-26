@@ -18,12 +18,14 @@ public class PlayerAudio : MonoBehaviour
     {
         height_fear_meter.fillAmount = 0;
         movement = GetComponent<PlayerMovement>();
+        FindObjectOfType<AudioManager>().Play("theme");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.D))) && (movement.IsGrounded() || movement.IsOnPlatform()))
+        if (((Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.D))) && (movement.IsGrounded() || movement.IsOnPlatform()))
         {
             footsteps.enabled = true;
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public bool inWater;
 
     public float climbSpeed;
+    public bool canClimb;
     public bool Aleft;
     public bool Dright;
 
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         
-        climbSpeed = 15f;
+        climbSpeed = 2f;
 
     }
     private void Update()
@@ -76,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetTrigger("jump");
             }
 
-            if (IsWalled() && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)))
+            if (IsWalled() && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && canClimb)
             {
                 body.velocity = new Vector2(body.velocity.x, climbSpeed);
             }
