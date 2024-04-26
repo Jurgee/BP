@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -35,6 +36,9 @@ public class Enemy : MonoBehaviour
     public FearOfDark dark;
     public CaveHand hand;
     public bool textF;
+
+    [Header("Final")] 
+    public bool final;
 
     [Header("Others")]
     public Animator anim;
@@ -122,6 +126,11 @@ public class Enemy : MonoBehaviour
             dark.isFeared = false;
             hand.scared = false;
             textF = true;
+        }
+
+        if (final)
+        {
+            SceneManager.LoadSceneAsync("End");
         }
     }
 

@@ -6,14 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private MinimapControl minimapControl;
+    public GameObject yesNo;
 
+    void Start()
+    {
+        yesNo.SetActive(false);
+    }
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Story"); 
+        yesNo.SetActive(true);
     }
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void Yes()
+    {
+        SceneManager.LoadScene("Story");
+    }
+
+    public void No()
+    {
+        yesNo.SetActive(false);
     }
 }
