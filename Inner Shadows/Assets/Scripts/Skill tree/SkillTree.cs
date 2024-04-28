@@ -18,7 +18,7 @@ public class SkillTree : MonoBehaviour
     {
         skillTree.SetActive(false);
         skillTreeActive = false;
-        skillPoints = 4;
+        skillPoints = 0;
 
 
         // Initialize the skill points text
