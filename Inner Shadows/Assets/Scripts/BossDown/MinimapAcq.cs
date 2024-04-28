@@ -42,6 +42,8 @@ public class MinimapAcq : MonoBehaviour
         enemy.textU = false;
         Time.timeScale = 1f;
         menuShown = false;
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+
     }
 }
 

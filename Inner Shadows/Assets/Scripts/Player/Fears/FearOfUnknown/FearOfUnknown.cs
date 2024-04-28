@@ -1,7 +1,7 @@
 /*
  * Inner shadows
  * Author: Jiøí Štípek
- * Description: Script for fear of lost phobia
+ * Description: Script for fear of the unknown phobia
  */
 
 using UnityEngine;

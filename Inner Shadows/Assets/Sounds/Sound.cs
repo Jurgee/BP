@@ -1,5 +1,8 @@
-using System;
-using UnityEngine.Audio;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the sound
+ */
 using UnityEngine;
 
 [System.Serializable]

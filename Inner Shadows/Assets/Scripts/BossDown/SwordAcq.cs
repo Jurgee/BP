@@ -42,6 +42,8 @@ public class SwordAcq : MonoBehaviour
         enemy.textS = false; 
         Time.timeScale = 1f; 
         menuShown = false;
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+
     }
 }
 

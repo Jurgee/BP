@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-20T14:25:01.471Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="zWEUCOTDyY4D9BNybI4j" version="24.2.7" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-27T12:25:38.110Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="9omINPGZK_8V7K3J-7Dw" version="24.3.0" type="device">
   <diagram name="Stránka-1" id="QTfIzcKnOUus8HyTwjOm">
-    <mxGraphModel dx="1674" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1216" dy="525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,10 +57,10 @@
         <mxCell id="Bw3VtWo-_IWqsyjpGnRu-9" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Algoritmy pro herní mechaniky&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="590" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Bw3VtWo-_IWqsyjpGnRu-18" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Nepřátelé&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Bw3VtWo-_IWqsyjpGnRu-18" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Nepřátelé/miniboss&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="594.5" y="680" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Bw3VtWo-_IWqsyjpGnRu-19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Miniboss&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Bw3VtWo-_IWqsyjpGnRu-19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Scény&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="680" width="120" height="60" as="geometry" />
         </mxCell>
       </root>

@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the player movement
+ */
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -109,8 +111,6 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = false;
             is_on_platform = false;
             inWater = false;
-            
-
         }
         if(collision.gameObject.tag == "Edge_1")
         {
@@ -119,8 +119,6 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = false;
             grounded = false;
             is_on_platform = false;
-
-           
         }
         if (collision.gameObject.tag == "Edge_2")
         {
@@ -129,8 +127,6 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = true;
             grounded = false;
             is_on_platform = false;
-
-            
         }
         if (collision.gameObject.tag == "Platform")
         {
@@ -140,8 +136,6 @@ public class PlayerMovement : MonoBehaviour
             edge_1 = false;
             edge_2 = false;
         }
-
-       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -158,8 +152,6 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = false;
             grounded = false;
             is_on_platform = false;
-
-
         }
         if (other.gameObject.tag == "Edge_2")
         {
@@ -168,8 +160,6 @@ public class PlayerMovement : MonoBehaviour
             edge_2 = true;
             grounded = false;
             is_on_platform = false;
-
-
         }
         
     }

@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the health bar
+ */
 using UnityEngine;
 using UnityEngine.UI;
 

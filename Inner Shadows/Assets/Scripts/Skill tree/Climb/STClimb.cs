@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the climb skill tree
+ */
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -71,10 +74,6 @@ public class STClimb : MonoBehaviour
             ChangeImageColor(1, Color.white); // change the second to white
             F_click = true;
             skillTree.RemoveSkillPoint();
-        }
-        else
-        {
-            // play sound
         }
 
     }

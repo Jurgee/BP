@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the player audio
+ */
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine;

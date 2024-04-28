@@ -42,5 +42,7 @@ public class PotionAcq : MonoBehaviour
         enemy.textP = false;
         Time.timeScale = 1f;
         menuShown = false;
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+
     }
 }

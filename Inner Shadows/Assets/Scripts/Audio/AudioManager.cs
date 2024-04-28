@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the audio manager
+ */
 using UnityEngine;
 using System;
 using UnityEngine.Audio;
@@ -18,12 +23,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // Play the clip 
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
     }
 
+    // Stop the clip
     public void Stop(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);

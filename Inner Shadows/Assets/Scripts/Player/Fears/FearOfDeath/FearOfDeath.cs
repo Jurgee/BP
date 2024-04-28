@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for fear of death
+ */
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +13,12 @@ public class FearOfDeath : MonoBehaviour
     public int maxDeaths;
     private float smoothSpeed = 15.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         deadCounter = 0;
         maxDeaths = 10;
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Calculate the fillAmount based on the deadCounter

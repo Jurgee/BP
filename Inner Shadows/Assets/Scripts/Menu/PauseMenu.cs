@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the pause menu
+ */
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
-    // Update is called once per frame
+    
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -29,6 +32,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // Resume the game
     public void Resume()
     {
         pauseMenu.SetActive(false);
@@ -38,6 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+    // Pause the game
     void Pause()
     {
         pauseMenu.SetActive(true);
@@ -45,6 +50,7 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = true;
     }
 
+    // Back to menu
     public void Menu()
     {
         FindObjectOfType<AudioManager>().Play("buttonClick");
@@ -53,7 +59,7 @@ public class PauseMenu : MonoBehaviour
         
 
     }
-
+    // Quit the game
     public void Quit()
     {
         FindObjectOfType<AudioManager>().Play("buttonClick");

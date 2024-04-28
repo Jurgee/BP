@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the enemy combat
+ */
 using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
@@ -55,7 +60,7 @@ public class EnemyCombat : MonoBehaviour
         }
 
     }
-
+    // Enemy sees the player
     private bool PlayerInSight()
     {
         RaycastHit2D hit =
@@ -89,10 +94,11 @@ public class EnemyCombat : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
 
+    // Damage player
     private void DamagePlayer()
     {
         if (PlayerInSight())
-            if (spiky)
+            if (spiky) // Fear of the spiked objects is on
             {
                 playerHealth.TakeSpikyDamage(damage);
             }
@@ -106,6 +112,7 @@ public class EnemyCombat : MonoBehaviour
         }
     }
 
+    // Damage boss only for Spike
     private void DamageBoss()
     {
         if (crystalHit)

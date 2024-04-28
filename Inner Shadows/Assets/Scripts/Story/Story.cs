@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the story scene
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

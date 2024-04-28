@@ -1,7 +1,7 @@
 /*
  * Inner shadows
  * Author: Jiøí Štípek
- * Description: Script for fear of dark phobia
+ * Description: Script for fear of water phobia
  */
 
 using UnityEngine;
@@ -34,16 +34,16 @@ public class FearOfWater : MonoBehaviour
     {
         if ((inRain && !level1) || (inWaterfall && !level2) || (inOcean && !level3))
         {
-            waterMeter.fillAmount += 0.8f * Time.deltaTime;
+            waterMeter.fillAmount += 0.8f * Time.deltaTime; // Start adding to meter
         }
         else
         {
-            waterMeter.fillAmount -= 0.8f * Time.deltaTime;
+            waterMeter.fillAmount -= 0.8f * Time.deltaTime; // Start decreasing 
         }
         ColorChanger();
         if (waterMeter.fillAmount >= 1.0f)
         {
-            health.TakeDamage(100f);
+            health.TakeDamage(100f); // Kill player
         }
     }
     private void OnTriggerEnter2D(Collider2D other)

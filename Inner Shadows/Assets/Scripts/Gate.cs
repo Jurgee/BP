@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the main gate
+ */
 using UnityEngine;
 
 public class Gate : MonoBehaviour

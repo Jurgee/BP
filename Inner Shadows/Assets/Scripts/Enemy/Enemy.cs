@@ -1,3 +1,8 @@
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the enemy
+ */
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -87,7 +92,7 @@ public class Enemy : MonoBehaviour
             fear.SetActive(false);
         }
 
-        if (canDropSword)
+        if (canDropSword) // Spike
         {
             player.swordAcquired = true;
             playerHealth.isFearedOfSpikes = false;
@@ -95,7 +100,7 @@ public class Enemy : MonoBehaviour
             textS = true;
         }
 
-        if (healthPotions)
+        if (healthPotions) // Nautilus
         {
             water.nautDead = true;
             health.canUseHealthPotions = true;
@@ -105,20 +110,20 @@ public class Enemy : MonoBehaviour
             textP = true;
         }
 
-        if (minimapAcq)
+        if (minimapAcq) // Voidwraith
         {
             minimap.minimapAcquired = true;
             unknown.isFeared = false;
             textU = true;
         }
 
-        if (fearOfHeights)
+        if (fearOfHeights) // Necromancer
         {
             height.isFeared = false;
             textH = true;
         }
 
-        if (scared)
+        if (scared) // Shadowbane
         {
             battery.bubuDead = true;
             skillTree.AddSkillPoint(1f);
@@ -130,7 +135,7 @@ public class Enemy : MonoBehaviour
 
         if (final)
         {
-            SceneManager.LoadSceneAsync("End");
+            SceneManager.LoadSceneAsync("End"); // Play the end scene
         }
     }
 

@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the key pick
+ */
 using UnityEngine;
 
 public class KeyPickup : MonoBehaviour

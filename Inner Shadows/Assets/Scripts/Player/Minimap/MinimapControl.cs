@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the minimap
+ */
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +19,7 @@ public class MinimapControl : MonoBehaviour
         minimapFrame.enabled = false;
         minimapMask.enabled = false;
         maximapRender.enabled = false;
-        minimapAcquired = false; // should be false
+        minimapAcquired = false; 
     }
     void Update()
     {

@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the health skill tree
+ */
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -67,11 +70,7 @@ public class STHealth : MonoBehaviour
             F_click = true;
             skillTree.RemoveSkillPoint();
         }
-        else
-        {
-            // play sound
-        }
-        
+
     }
 
     // Update the health and change the color of the second image

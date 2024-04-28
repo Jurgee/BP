@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the game over image
+ */
 using UnityEngine;
 
 public class GameOver : MonoBehaviour
@@ -14,7 +17,7 @@ public class GameOver : MonoBehaviour
     
     void Update()
     {
-        if (death.maxDeaths == death.deadCounter)
+        if (death.maxDeaths == death.deadCounter) // Limit is reached
         {
             menu.SetActive(true);
             

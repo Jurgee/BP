@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the main menu
+ */
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,11 +25,11 @@ public class MainMenu : MonoBehaviour
 
     public void Yes()
     {
-        SceneManager.LoadScene("Story");
+        SceneManager.LoadScene("Story"); // Load story scene
     }
 
     public void No()
     {
-        yesNo.SetActive(false);
+        yesNo.SetActive(false); // Go back to main menu
     }
 }

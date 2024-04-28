@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the boss movement
+ */
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour

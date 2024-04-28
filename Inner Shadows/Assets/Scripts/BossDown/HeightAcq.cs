@@ -42,6 +42,8 @@ public class HeightAcq : MonoBehaviour
         enemy.textH = false;
         Time.timeScale = 1f;
         menuShown = false;
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+
     }
 }
 

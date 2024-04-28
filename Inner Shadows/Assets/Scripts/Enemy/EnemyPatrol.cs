@@ -1,4 +1,9 @@
-
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the enemy patrol
+ * Original from YT video: https://youtu.be/d002CljR-KU?list=PLgOEwFbvGm5o8hayFB6skAfa8Z-mw4dPV&t=1216
+ */
 using System;
 using UnityEngine;
 
@@ -18,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     public bool reverse;
     private void Awake()
     {
-        initScale = enemy.localScale;
+        initScale = enemy.localScale; // Set scale
 
     }
     private void Update()

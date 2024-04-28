@@ -1,5 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Inner shadows
+ * Author: Jiøí Štípek
+ * Description: Script for the damage skill tree
+ */
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -75,10 +78,6 @@ public class STDamage : MonoBehaviour
             F_click = true;
             skillTree.RemoveSkillPoint();
 
-        }
-        else
-        {
-            // play sound
         }
 
     }
