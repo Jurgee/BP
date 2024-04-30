@@ -112,7 +112,6 @@ public class Health : MonoBehaviour
             }
             ColorChanger();
         }
-        
     }
     // Add health
     public void AddHealth(float _value)

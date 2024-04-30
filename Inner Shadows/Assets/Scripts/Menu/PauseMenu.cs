@@ -11,11 +11,13 @@ public class PauseMenu : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
+    public GameObject controls;
     
     void Start()
     {
         pauseMenu.SetActive(false);
         gameIsPaused = false;
+        controls.SetActive(false);
     }
     void Update()
     {
@@ -54,7 +56,7 @@ public class PauseMenu : MonoBehaviour
     public void Menu()
     {
         FindObjectOfType<AudioManager>().Play("buttonClick");
-        SceneManager.LoadSceneAsync("Main Menu", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("Main Menu");
         gameIsPaused = false;
         
 
@@ -64,6 +66,21 @@ public class PauseMenu : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("buttonClick");
         Application.Quit();
+
+    }
+
+    public void Controls()
+    {
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+        controls.SetActive(true);
+        
+    }
+
+    public void Cancel()
+    {
+        FindObjectOfType<AudioManager>().Play("buttonClick");
+        controls.SetActive(false);
+
 
     }
 }

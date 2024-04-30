@@ -19,7 +19,7 @@ public class STBattery : MonoBehaviour
     private bool F_click;
     private bool S_click;
     private bool T_click;
-    public bool bubuDead;
+    public bool bubuDead = false;
     void Start()
     {
         levelImages[0].color = Color.black; // First image to black
@@ -30,7 +30,6 @@ public class STBattery : MonoBehaviour
         S_click = false;
         T_click = false;
         done = false;
-        bubuDead = false;
     }
 
     void Update()

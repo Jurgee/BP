@@ -16,8 +16,8 @@ public class STWater : MonoBehaviour
     public TextMeshProUGUI skillInfoText; // Reference to TextMesh Pro component
     public SkillTree tree;
 
-    public bool spikeDead;
-    public bool nautDead;
+    public bool spikeDead = false;
+    public bool nautDead = false;
 
     private bool F_click;
     private bool S_click;
@@ -33,8 +33,6 @@ public class STWater : MonoBehaviour
         F_click = false;
         S_click = false;
         T_click = false;
-        spikeDead = false;
-        nautDead = false;
         done = false;
     }
 

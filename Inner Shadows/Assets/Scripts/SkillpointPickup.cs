@@ -16,6 +16,7 @@ public class SkillpointPickup : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("skillPick");
 
             gameObject.SetActive(false);
+
         }
     }
 }

@@ -117,7 +117,7 @@ public class EnemyCombat : MonoBehaviour
     {
         if (crystalHit)
         {
-            enemyHealth.TakeEnemyDamage(100);
+            enemyHealth.TakeEnemyDamage(25);
             crystalHit = false;
         }
     }

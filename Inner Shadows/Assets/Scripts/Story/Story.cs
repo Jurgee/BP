@@ -6,17 +6,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class Story : MonoBehaviour
 {
-    public AudioSource audioSource; 
-    public List<AudioClip> soundClips; 
+    public AudioSource audioSource; // The AudioSource component for playing the sound sequence
+    public List<AudioClip> soundClips; // List of audio clips for the story
     public float delayBetweenClips = 0.5f; // Delay between each sound in seconds
-    public string sceneToLoad = "Game"; // Name of the scene to load
+    public string sceneToLoad = "Game"; // The scene to load after the story
 
-    public AudioSource backgroundMusicSource; 
-    public AudioClip backgroundMusicClip; 
+    public AudioSource backgroundMusicSource; // The AudioSource component for background music
+    public AudioClip backgroundMusicClip; // Background music AudioClip
+
+    private Coroutine soundSequenceCoroutine; // To keep track of the coroutine
+
     void Start()
     {
         if (audioSource == null)
@@ -26,7 +29,7 @@ public class Story : MonoBehaviour
 
         if (audioSource != null && soundClips.Count > 0)
         {
-            StartCoroutine(PlaySoundSequence()); // Start the coroutine to play the sounds
+            soundSequenceCoroutine = StartCoroutine(PlaySoundSequence()); // Start the coroutine to play the sounds
         }
 
         if (backgroundMusicSource != null && backgroundMusicClip != null)
@@ -37,23 +40,33 @@ public class Story : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // Check if the "Enter" key is pressed
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter)) // Enter key or keypad Enter
+        {
+            if (soundSequenceCoroutine != null)
+            {
+                StopCoroutine(soundSequenceCoroutine); // Stop the sound sequence coroutine
+            }
+            ChangeScene(); // Skip to the specified scene
+        }
+    }
+
     private IEnumerator PlaySoundSequence()
     {
-        // Loop through each sound clip and play it
         foreach (var clip in soundClips)
         {
-            if (clip != null) // Ensure the clip is valid
+            if (clip != null)
             {
-                audioSource.clip = clip; // Set the current clip to play
-                audioSource.Play(); // Play the clip
+                audioSource.clip = clip;
+                audioSource.Play();
 
-                // Wait for the clip to finish and then add the delay
-                yield return new WaitForSeconds(clip.length + delayBetweenClips);
+                yield return new WaitForSeconds(clip.length + delayBetweenClips); // Wait for clip to finish
             }
         }
 
-        // After the last clip has played, change the scene
-        ChangeScene();
+        ChangeScene(); // Change the scene after all clips have played
     }
 
     private void ChangeScene()
