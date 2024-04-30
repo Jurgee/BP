@@ -22,7 +22,7 @@ public class STClimb : MonoBehaviour
 
     void Start()
     {
-        levelImages[0].color = Color.black; // First image to white
+        levelImages[0].color = Color.black; // First image to black
         levelImages[1].color = Color.black; // Second image to black
         levelImages[2].color = Color.black; // Third image to black
 
