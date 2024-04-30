@@ -1301,8 +1301,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This game has a runtime of about an hour and does not have the option
-    to save your progress.
+  m_text: 'This game has a gametime of about two hours and does not have the option
+    to save your progress
 
 
     Would you like to start the game ?'
