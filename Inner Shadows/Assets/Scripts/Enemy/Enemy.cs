@@ -6,6 +6,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,6 +53,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public GameObject fear;
     [SerializeField] public EnemyMovement enemyMovement;
     public bool boss;
+    public float delayBeforeShowingEnd = 3f; // Delay before the end is shown
 
     public float wait;
     // Start is called before the first frame update
@@ -135,7 +137,8 @@ public class Enemy : MonoBehaviour
 
         if (final)
         {
-            SceneManager.LoadSceneAsync("End"); // Play the end scene
+            StartCoroutine(ShowEndWithDelay());
+            SceneManager.LoadScene("End"); // Play the end scene
         }
     }
 
@@ -145,6 +148,10 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject); // Remove the character
     }
 
+    private IEnumerator ShowEndWithDelay()
+    {
+        yield return new WaitForSeconds(delayBeforeShowingEnd); // Wait 3 seconds
+    }
 
 
 }

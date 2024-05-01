@@ -16,7 +16,6 @@ public class HealthPotions : MonoBehaviour
     [SerializeField] private Health health;
     void Start()
     {
-        canUseHealthPotions = false; // Set initial state
         UpdatePotionCountDisplay(); // Display initial potion count
     }
 
