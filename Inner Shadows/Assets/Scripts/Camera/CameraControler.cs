@@ -14,10 +14,12 @@ public class CameraControler : MonoBehaviour
     [SerializeField] private float damping;
     [SerializeField] private float lookDown;
     [SerializeField] private Camera cam;
+    [SerializeField] private FearOfUnknown unknown;
 
     private FearOfUnknown lostMeter;
     private float lookAhead;
     private Vector3 targetPosition;
+    public float unknownMeter;
 
     private float camStart = 23.50195f;
     private float transitionSpeed = 2f;
@@ -33,27 +35,33 @@ public class CameraControler : MonoBehaviour
 
         // Vertical camera movement
         float targetYPosition = player.position.y + verticalOffset;
-        float meter = lostMeter.fearMeter.fillAmount;
+        unknownMeter = lostMeter.fearMeter.fillAmount;
 
+        
         // fear of lost cam, zooming
-        if (meter <= 0.3f)
+        if (!unknown.isFeared)
+        {
+            unknownMeter = 0f;
+        }
+
+        if (unknownMeter <= 0.3f)
         {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, camStart, Time.deltaTime * transitionSpeed);
             targetYPosition = player.position.y + verticalOffset;
 
         }
-        else if (meter <= 0.5f)
+        else if (unknownMeter <= 0.5f)
         {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 20f, Time.deltaTime * transitionSpeed);
             targetYPosition -= 2f;
 
         }
-        else if (meter <= 0.8f)
+        else if (unknownMeter <= 0.8f)
         {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 13f, Time.deltaTime * transitionSpeed);
             targetYPosition -= 6f;
         }
-        else if (meter <= 1f)
+        else if (unknownMeter <= 1f)
         {
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 10f, Time.deltaTime * transitionSpeed);
             targetYPosition -= 10f;
